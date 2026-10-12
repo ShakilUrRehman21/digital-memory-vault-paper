@@ -1,0 +1,938 @@
+{
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:16:18.961Z",
+    "baseUrl": "http://localhost:3000"
+  },
+  "source": "ForecastBench superforecaster forecasts, question set 2024-07-21 (CC BY-SA 4.0)",
+  "minForecasts": 20,
+  "summary": {
+    "forecasters": 39,
+    "forecasts": 4793,
+    "forecastsPerForecaster": {
+      "min": 40,
+      "median": 88,
+      "max": 578
+    },
+    "pooled": {
+      "n": 4793,
+      "brier": 0.11009823687748496,
+      "ece": 0.019317551988086948,
+      "reliability": 0.0008866810069959642,
+      "citl": 0.003528484598140147,
+      "dce": 0.02024986995178429,
+      "baseRate": 0.28270394325057374
+    },
+    "ranges": {
+      "baselinecc": [
+        87,
+        100
+      ],
+      "revisedcc": [
+        81,
+        97
+      ],
+      "baselinerc": [
+        15,
+        54
+      ],
+      "revisedrc": [
+        84,
+        100
+      ],
+      "ece": [
+        0.038,
+        0.207
+      ],
+      "dce": [
+        0.012,
+        0.175
+      ],
+      "brier": [
+        0.055,
+        0.237
+      ]
+    }
+  },
+  "correlations": [
+    {
+      "score": "baseline confidence calibration",
+      "reference": "ECE",
+      "rho": -0.423,
+      "ci95": [
+        -0.687,
+        -0.104
+      ]
+    },
+    {
+      "score": "revised confidence calibration",
+      "reference": "ECE",
+      "rho": -0.91,
+      "ci95": [
+        -0.961,
+        -0.812
+      ]
+    },
+    {
+      "score": "baseline confidence calibration",
+      "reference": "reliability",
+      "rho": -0.465,
+      "ci95": [
+        -0.701,
+        -0.149
+      ]
+    },
+    {
+      "score": "revised confidence calibration",
+      "reference": "reliability",
+      "rho": -0.796,
+      "ci95": [
+        -0.898,
+        -0.628
+      ]
+    },
+    {
+      "score": "baseline confidence calibration",
+      "reference": "|calibration-in-the-large|",
+      "rho": -0.959,
+      "ci95": [
+        -0.981,
+        -0.905
+      ]
+    },
+    {
+      "score": "baseline risk calibration",
+      "reference": "domain calibration error",
+      "rho": -0.08,
+      "ci95": [
+        -0.38,
+        0.226
+      ]
+    },
+    {
+      "score": "revised risk calibration",
+      "reference": "domain calibration error",
+      "rho": -0.963,
+      "ci95": [
+        -0.982,
+        -0.913
+      ]
+    },
+    {
+      "score": "baseline risk calibration",
+      "reference": "outcome base rate",
+      "rho": 0.511,
+      "ci95": [
+        0.21,
+        0.723
+      ]
+    },
+    {
+      "score": "revised risk calibration",
+      "reference": "outcome base rate",
+      "rho": -0.262,
+      "ci95": [
+        -0.524,
+        0.058
+      ]
+    }
+  ],
+  "distortion": [
+    {
+      "id": "D1",
+      "name": "Uniform overconfidence: p + 0.2",
+      "reference": "ECE",
+      "forecasters": 39,
+      "results": {
+        "baseline confidence calibration": {
+          "agreement": 0.949,
+          "unchanged": 0
+        },
+        "baseline risk calibration": {
+          "agreement": 0,
+          "unchanged": 1
+        },
+        "revised confidence calibration": {
+          "agreement": 1,
+          "unchanged": 0
+        },
+        "revised risk calibration": {
+          "agreement": 0.974,
+          "unchanged": 0
+        }
+      }
+    },
+    {
+      "id": "D2",
+      "name": "Uniform underconfidence: p - 0.2",
+      "reference": "ECE",
+      "forecasters": 39,
+      "results": {
+        "baseline confidence calibration": {
+          "agreement": 0.897,
+          "unchanged": 0
+        },
+        "baseline risk calibration": {
+          "agreement": 0,
+          "unchanged": 1
+        },
+        "revised confidence calibration": {
+          "agreement": 0.872,
+          "unchanged": 0.077
+        },
+        "revised risk calibration": {
+          "agreement": 0.846,
+          "unchanged": 0
+        }
+      }
+    },
+    {
+      "id": "D3",
+      "name": "Opposite errors by domain: market - 0.2, event + 0.2",
+      "reference": "DCE",
+      "forecasters": 39,
+      "results": {
+        "baseline confidence calibration": {
+          "agreement": 0.692,
+          "unchanged": 0.026
+        },
+        "baseline risk calibration": {
+          "agreement": 0,
+          "unchanged": 1
+        },
+        "revised confidence calibration": {
+          "agreement": 0.846,
+          "unchanged": 0.051
+        },
+        "revised risk calibration": {
+          "agreement": 0.923,
+          "unchanged": 0.077
+        }
+      }
+    },
+    {
+      "id": "D4",
+      "name": "Extremised: logit doubled",
+      "reference": "ECE",
+      "forecasters": 39,
+      "results": {
+        "baseline confidence calibration": {
+          "agreement": 0.282,
+          "unchanged": 0.385
+        },
+        "baseline risk calibration": {
+          "agreement": 0,
+          "unchanged": 1
+        },
+        "revised confidence calibration": {
+          "agreement": 0.615,
+          "unchanged": 0.282
+        },
+        "revised risk calibration": {
+          "agreement": 0.333,
+          "unchanged": 0.359
+        }
+      }
+    }
+  ],
+  "lengthCurve": [
+    {
+      "n": 10,
+      "forecasters": 24,
+      "baselinecc": -0.134,
+      "revisedcc": -0.265,
+      "baselinerc": 0.039,
+      "revisedrc": -0.216
+    },
+    {
+      "n": 20,
+      "forecasters": 24,
+      "baselinecc": -0.153,
+      "revisedcc": -0.358,
+      "baselinerc": 0.02,
+      "revisedrc": -0.305
+    },
+    {
+      "n": 40,
+      "forecasters": 24,
+      "baselinecc": -0.201,
+      "revisedcc": -0.468,
+      "baselinerc": -0.006,
+      "revisedrc": -0.432
+    },
+    {
+      "n": 80,
+      "forecasters": 24,
+      "baselinecc": -0.28,
+      "revisedcc": -0.606,
+      "baselinerc": -0.063,
+      "revisedrc": -0.736
+    }
+  ],
+  "perForecaster": [
+    {
+      "forecaster": "SbZAVaBSo6",
+      "n": 168,
+      "brier": 0.13565488095238093,
+      "ece": 0.06755952380952382,
+      "reliability": 0.012172263484130958,
+      "citl": 0.038988095238095155,
+      "dce": 0.03898809523809529,
+      "baseRate": 0.3273809523809524,
+      "baselinecc": 95,
+      "baselinerc": 32,
+      "baselineda": 74,
+      "revisedcc": 93,
+      "revisedrc": 95,
+      "revisedce": 0.75,
+      "revisedrce": 0.47619047619047616
+    },
+    {
+      "forecaster": "S3bbH6xnAb",
+      "n": 132,
+      "brier": 0.07950193939393944,
+      "ece": 0.055954545454545444,
+      "reliability": 0.012034090115440122,
+      "citl": -0.0017727272727271481,
+      "dce": 0.01231818181818181,
+      "baseRate": 0.26515151515151514,
+      "baselinecc": 100,
+      "baselinerc": 31,
+      "baselineda": 85,
+      "revisedcc": 96,
+      "revisedrc": 98,
+      "revisedce": 0.3939393939393939,
+      "revisedrce": 0.15151515151515152
+    },
+    {
+      "forecaster": "SS6AZPsK20",
+      "n": 152,
+      "brier": 0.08368175006579606,
+      "ece": 0.08477698026315789,
+      "reliability": 0.02666967077557602,
+      "citl": 0.03451382236842107,
+      "dce": 0.03451382236842104,
+      "baseRate": 0.16447368421052633,
+      "baselinecc": 96,
+      "baselinerc": 21,
+      "baselineda": 86,
+      "revisedcc": 92,
+      "revisedrc": 96,
+      "revisedce": 0.8355263157894737,
+      "revisedrce": 0.3618421052631579
+    },
+    {
+      "forecaster": "SFKcpXzkIR",
+      "n": 85,
+      "brier": 0.1336179534117647,
+      "ece": 0.09180235294117645,
+      "reliability": 0.027097646701065275,
+      "citl": 0.03687294117647055,
+      "dce": 0.048590588235294066,
+      "baseRate": 0.3058823529411765,
+      "baselinecc": 97,
+      "baselinerc": 26,
+      "baselineda": 78,
+      "revisedcc": 93,
+      "revisedrc": 96,
+      "revisedce": 0.6823529411764706,
+      "revisedrce": 0.4235294117647059
+    },
+    {
+      "forecaster": "SH1oF7JCqH",
+      "n": 161,
+      "brier": 0.06989378881987571,
+      "ece": 0.0668944099378882,
+      "reliability": 0.012122798381292845,
+      "citl": 0.008757763975155292,
+      "dce": 0.02341614906832297,
+      "baseRate": 0.2360248447204969,
+      "baselinecc": 100,
+      "baselinerc": 30,
+      "baselineda": 87,
+      "revisedcc": 94,
+      "revisedrc": 99,
+      "revisedce": 0.6459627329192547,
+      "revisedrce": 0.13664596273291926
+    },
+    {
+      "forecaster": "SXXYp0Pfba",
+      "n": 77,
+      "brier": 0.12504440584415585,
+      "ece": 0.07105844155844154,
+      "reliability": 0.014459836670274165,
+      "citl": 0.003655844155844079,
+      "dce": 0.03037012987012984,
+      "baseRate": 0.2727272727272727,
+      "baselinecc": 100,
+      "baselinerc": 28,
+      "baselineda": 78,
+      "revisedcc": 95,
+      "revisedrc": 97,
+      "revisedce": 0.45454545454545453,
+      "revisedrce": 0.2727272727272727
+    },
+    {
+      "forecaster": "SUpgMvejGk",
+      "n": 348,
+      "brier": 0.11817664083333333,
+      "ece": 0.07204913793103443,
+      "reliability": 0.011940542044387829,
+      "citl": -0.005996839080459948,
+      "dce": 0.016295689655172328,
+      "baseRate": 0.28160919540229884,
+      "baselinecc": 100,
+      "baselinerc": 30,
+      "baselineda": 78,
+      "revisedcc": 94,
+      "revisedrc": 99,
+      "revisedce": 0.5747126436781609,
+      "revisedrce": 0.11494252873563218
+    },
+    {
+      "forecaster": "SqSCtDbxAl",
+      "n": 56,
+      "brier": 0.11772321428571428,
+      "ece": 0.13374999999999998,
+      "reliability": 0.049943386970172685,
+      "citl": -0.011964285714285816,
+      "dce": 0.09160714285714283,
+      "baseRate": 0.26785714285714285,
+      "baselinecc": 99,
+      "baselinerc": 36,
+      "baselineda": 80,
+      "revisedcc": 89,
+      "revisedrc": 91,
+      "revisedce": 1.1428571428571428,
+      "revisedrce": 0.8928571428571429
+    },
+    {
+      "forecaster": "Sg3FmLYbbj",
+      "n": 89,
+      "brier": 0.1153528202247191,
+      "ece": 0.08066292134831461,
+      "reliability": 0.010499622765577123,
+      "citl": -0.019337078651685324,
+      "dce": 0.04403370786516856,
+      "baseRate": 0.449438202247191,
+      "baselinecc": 98,
+      "baselinerc": 44,
+      "baselineda": 81,
+      "revisedcc": 93,
+      "revisedrc": 96,
+      "revisedce": 0.6853932584269663,
+      "revisedrce": 0.39325842696629215
+    },
+    {
+      "forecaster": "SnOyJtNds8",
+      "n": 62,
+      "brier": 0.10366775806451613,
+      "ece": 0.11775806451612907,
+      "reliability": 0.029916303671537563,
+      "citl": -0.10708064516129034,
+      "dce": 0.11485483870967741,
+      "baseRate": 0.45161290322580644,
+      "baselinecc": 92,
+      "baselinerc": 33,
+      "baselineda": 82,
+      "revisedcc": 91,
+      "revisedrc": 92,
+      "revisedce": 0.8548387096774194,
+      "revisedrce": 0.8225806451612904
+    },
+    {
+      "forecaster": "S2s1t6Uzpa",
+      "n": 86,
+      "brier": 0.1282616395348837,
+      "ece": 0.08291860465116278,
+      "reliability": 0.021139401492994953,
+      "citl": -0.015918604651162793,
+      "dce": 0.10454651162790694,
+      "baseRate": 0.3372093023255814,
+      "baselinecc": 100,
+      "baselinerc": 30,
+      "baselineda": 78,
+      "revisedcc": 97,
+      "revisedrc": 92,
+      "revisedce": 0.3372093023255814,
+      "revisedrce": 0.8023255813953488
+    },
+    {
+      "forecaster": "S2cY7Jk18R",
+      "n": 92,
+      "brier": 0.07939730434782609,
+      "ece": 0.08023913043478259,
+      "reliability": 0.024825632091097307,
+      "citl": 0.06045652173913049,
+      "dce": 0.060456521739130395,
+      "baseRate": 0.22826086956521738,
+      "baselinecc": 94,
+      "baselinerc": 20,
+      "baselineda": 85,
+      "revisedcc": 94,
+      "revisedrc": 94,
+      "revisedce": 0.6304347826086957,
+      "revisedrce": 0.5652173913043478
+    },
+    {
+      "forecaster": "SsEu23bmu9",
+      "n": 48,
+      "brier": 0.07599010416666667,
+      "ece": 0.13468750000000002,
+      "reliability": 0.03582423115079365,
+      "citl": 0.049270833333333375,
+      "dce": 0.04927083333333333,
+      "baseRate": 0.2916666666666667,
+      "baselinecc": 95,
+      "baselinerc": 25,
+      "baselineda": 83,
+      "revisedcc": 88,
+      "revisedrc": 95,
+      "revisedce": 1.1666666666666667,
+      "revisedrce": 0.4583333333333333
+    },
+    {
+      "forecaster": "SWvnPZ5v2Q",
+      "n": 196,
+      "brier": 0.05522360204081635,
+      "ece": 0.03874489795918367,
+      "reliability": 0.005116635174967269,
+      "citl": -0.008295918367346916,
+      "dce": 0.01757142857142855,
+      "baseRate": 0.25,
+      "baselinecc": 99,
+      "baselinerc": 26,
+      "baselineda": 89,
+      "revisedcc": 97,
+      "revisedrc": 98,
+      "revisedce": 0.3163265306122449,
+      "revisedrce": 0.1836734693877551
+    },
+    {
+      "forecaster": "SE9oSfk4nV",
+      "n": 169,
+      "brier": 0.11613345053254437,
+      "ece": 0.07337751479289945,
+      "reliability": 0.009490376004890893,
+      "citl": 0.005160946745562001,
+      "dce": 0.041764497041420004,
+      "baseRate": 0.3668639053254438,
+      "baselinecc": 99,
+      "baselinerc": 54,
+      "baselineda": 78,
+      "revisedcc": 95,
+      "revisedrc": 96,
+      "revisedce": 0.5088757396449705,
+      "revisedrce": 0.40236686390532544
+    },
+    {
+      "forecaster": "SiIgce1WZv",
+      "n": 88,
+      "brier": 0.11275069318181821,
+      "ece": 0.10978409090909091,
+      "reliability": 0.028368417776667782,
+      "citl": 0.044556818181818114,
+      "dce": 0.04455681818181821,
+      "baseRate": 0.2840909090909091,
+      "baselinecc": 96,
+      "baselinerc": 33,
+      "baselineda": 80,
+      "revisedcc": 90,
+      "revisedrc": 96,
+      "revisedce": 1.0113636363636365,
+      "revisedrce": 0.3977272727272727
+    },
+    {
+      "forecaster": "S2co9AhkoU",
+      "n": 77,
+      "brier": 0.237412025974026,
+      "ece": 0.20654545454545453,
+      "reliability": 0.08821952645190306,
+      "citl": -0.13719480519480515,
+      "dce": 0.17527272727272716,
+      "baseRate": 0.4025974025974026,
+      "baselinecc": 87,
+      "baselinerc": 23,
+      "baselineda": 67,
+      "revisedcc": 81,
+      "revisedrc": 84,
+      "revisedce": 1.87012987012987,
+      "revisedrce": 1.5844155844155845
+    },
+    {
+      "forecaster": "Sg4x84spDg",
+      "n": 82,
+      "brier": 0.1624317073170732,
+      "ece": 0.11634146341463421,
+      "reliability": 0.05218458802376485,
+      "citl": 0.10804878048780486,
+      "dce": 0.10804878048780489,
+      "baseRate": 0.2926829268292683,
+      "baselinecc": 90,
+      "baselinerc": 43,
+      "baselineda": 73,
+      "revisedcc": 89,
+      "revisedrc": 90,
+      "revisedce": 1.0853658536585367,
+      "revisedrce": 0.9634146341463414
+    },
+    {
+      "forecaster": "SOca8sKBtd",
+      "n": 104,
+      "brier": 0.0857653846153846,
+      "ece": 0.0775,
+      "reliability": 0.018314417735042738,
+      "citl": 0.013076923076923153,
+      "dce": 0.016153846153846185,
+      "baseRate": 0.18269230769230768,
+      "baselinecc": 99,
+      "baselinerc": 23,
+      "baselineda": 85,
+      "revisedcc": 95,
+      "revisedrc": 99,
+      "revisedce": 0.5480769230769231,
+      "revisedrce": 0.14423076923076922
+    },
+    {
+      "forecaster": "SPqHtpfr8B",
+      "n": 578,
+      "brier": 0.1287968598615918,
+      "ece": 0.03781833910034591,
+      "reliability": 0.004072673758812566,
+      "citl": -0.006399653979238806,
+      "dce": 0.017787197231833734,
+      "baseRate": 0.3166089965397924,
+      "baselinecc": 100,
+      "baselinerc": 28,
+      "baselineda": 77,
+      "revisedcc": 97,
+      "revisedrc": 100,
+      "revisedce": 0.3096885813148789,
+      "revisedrce": 0.04671280276816609
+    },
+    {
+      "forecaster": "SON6ytut03",
+      "n": 117,
+      "brier": 0.09998461538461538,
+      "ece": 0.07897435897435895,
+      "reliability": 0.012309893392736528,
+      "citl": 0.0013675213675213294,
+      "dce": 0.12649572649572646,
+      "baseRate": 0.29914529914529914,
+      "baselinecc": 100,
+      "baselinerc": 26,
+      "baselineda": 81,
+      "revisedcc": 92,
+      "revisedrc": 89,
+      "revisedce": 0.7606837606837606,
+      "revisedrce": 1.1025641025641026
+    },
+    {
+      "forecaster": "SsuHJKpbpe",
+      "n": 78,
+      "brier": 0.133076923076923,
+      "ece": 0.12435897435897435,
+      "reliability": 0.02218618742368743,
+      "citl": -0.03333333333333327,
+      "dce": 0.04102564102564106,
+      "baseRate": 0.3333333333333333,
+      "baselinecc": 97,
+      "baselinerc": 35,
+      "baselineda": 81,
+      "revisedcc": 87,
+      "revisedrc": 96,
+      "revisedce": 1.3076923076923077,
+      "revisedrce": 0.41025641025641024
+    },
+    {
+      "forecaster": "ScR8KykF8V",
+      "n": 64,
+      "brier": 0.17248632812500006,
+      "ece": 0.17835937500000001,
+      "reliability": 0.08802311028079711,
+      "citl": -0.007265624999999998,
+      "dce": 0.05835937499999996,
+      "baseRate": 0.34375,
+      "baselinecc": 100,
+      "baselinerc": 24,
+      "baselineda": 71,
+      "revisedcc": 87,
+      "revisedrc": 96,
+      "revisedce": 1.296875,
+      "revisedrce": 0.390625
+    },
+    {
+      "forecaster": "SHMLCbokK1",
+      "n": 242,
+      "brier": 0.08770706714876034,
+      "ece": 0.03848471074380166,
+      "reliability": 0.0050016863150221524,
+      "citl": 0.018649999999999944,
+      "dce": 0.029228512396694245,
+      "baseRate": 0.2809917355371901,
+      "baselinecc": 98,
+      "baselinerc": 27,
+      "baselineda": 83,
+      "revisedcc": 96,
+      "revisedrc": 98,
+      "revisedce": 0.3677685950413223,
+      "revisedrce": 0.23553719008264462
+    },
+    {
+      "forecaster": "SMWxJnfq3I",
+      "n": 238,
+      "brier": 0.10506332773109246,
+      "ece": 0.11963025210084034,
+      "reliability": 0.025859269895137545,
+      "citl": 0.06862184873949573,
+      "dce": 0.06862184873949573,
+      "baseRate": 0.20168067226890757,
+      "baselinecc": 94,
+      "baselinerc": 26,
+      "baselineda": 80,
+      "revisedcc": 91,
+      "revisedrc": 94,
+      "revisedce": 0.9243697478991597,
+      "revisedrce": 0.6218487394957983
+    },
+    {
+      "forecaster": "SFXe6kW9Yt",
+      "n": 59,
+      "brier": 0.12061942373050846,
+      "ece": 0.13213542372881354,
+      "reliability": 0.04858170040090798,
+      "citl": -0.061287966101694985,
+      "dce": 0.06447474576271184,
+      "baseRate": 0.288135593220339,
+      "baselinecc": 95,
+      "baselinerc": 22,
+      "baselineda": 82,
+      "revisedcc": 88,
+      "revisedrc": 95,
+      "revisedce": 1.2203389830508475,
+      "revisedrce": 0.5423728813559322
+    },
+    {
+      "forecaster": "S3X40UQlAj",
+      "n": 56,
+      "brier": 0.1933035714285715,
+      "ece": 0.09107142857142858,
+      "reliability": 0.013166638049450546,
+      "citl": -0.02499999999999991,
+      "dce": 0.06428571428571428,
+      "baseRate": 0.5,
+      "baselinecc": 99,
+      "baselinerc": 51,
+      "baselineda": 63,
+      "revisedcc": 92,
+      "revisedrc": 95,
+      "revisedce": 0.8392857142857143,
+      "revisedrce": 0.48214285714285715
+    },
+    {
+      "forecaster": "S7aWY2TYGI",
+      "n": 137,
+      "brier": 0.08151864963503648,
+      "ece": 0.060912408759124084,
+      "reliability": 0.014991486212489866,
+      "citl": -0.002883211678832126,
+      "dce": 0.024562043795620398,
+      "baseRate": 0.18248175182481752,
+      "baselinecc": 100,
+      "baselinerc": 20,
+      "baselineda": 86,
+      "revisedcc": 96,
+      "revisedrc": 98,
+      "revisedce": 0.39416058394160586,
+      "revisedrce": 0.20437956204379562
+    },
+    {
+      "forecaster": "SgF5s3i4bt",
+      "n": 129,
+      "brier": 0.09783255852713178,
+      "ece": 0.08526744186046513,
+      "reliability": 0.024017574483507425,
+      "citl": -0.055034883720930156,
+      "dce": 0.06449999999999995,
+      "baseRate": 0.29457364341085274,
+      "baselinecc": 95,
+      "baselinerc": 22,
+      "baselineda": 83,
+      "revisedcc": 92,
+      "revisedrc": 94,
+      "revisedce": 0.8449612403100775,
+      "revisedrce": 0.5503875968992248
+    },
+    {
+      "forecaster": "SCyupbOzJd",
+      "n": 40,
+      "brier": 0.1504470875,
+      "ece": 0.12062500000000002,
+      "reliability": 0.029551115151515154,
+      "citl": 0.027625000000000066,
+      "dce": 0.02762500000000003,
+      "baseRate": 0.3,
+      "baselinecc": 98,
+      "baselinerc": 24,
+      "baselineda": 71,
+      "revisedcc": 90,
+      "revisedrc": 98,
+      "revisedce": 0.975,
+      "revisedrce": 0.225
+    },
+    {
+      "forecaster": "SwihqZyyLo",
+      "n": 174,
+      "brier": 0.08957140804597702,
+      "ece": 0.07140804597701152,
+      "reliability": 0.0143155837352901,
+      "citl": 0.05520114942528734,
+      "dce": 0.05520114942528734,
+      "baseRate": 0.16666666666666666,
+      "baselinecc": 95,
+      "baselinerc": 23,
+      "baselineda": 83,
+      "revisedcc": 94,
+      "revisedrc": 95,
+      "revisedce": 0.5862068965517241,
+      "revisedrce": 0.5402298850574713
+    },
+    {
+      "forecaster": "SnBEoonCrb",
+      "n": 88,
+      "brier": 0.07427642045454544,
+      "ece": 0.05869318181818182,
+      "reliability": 0.01827108886993421,
+      "citl": 0.02687500000000001,
+      "dce": 0.03198863636363636,
+      "baseRate": 0.125,
+      "baselinecc": 98,
+      "baselinerc": 22,
+      "baselineda": 87,
+      "revisedcc": 95,
+      "revisedrc": 97,
+      "revisedce": 0.5227272727272727,
+      "revisedrce": 0.29545454545454547
+    },
+    {
+      "forecaster": "S488gnM8HQ",
+      "n": 99,
+      "brier": 0.07450411215845962,
+      "ece": 0.05617288564545454,
+      "reliability": 0.008003146469690232,
+      "citl": -0.00342307395050509,
+      "dce": 0.05132440079696976,
+      "baseRate": 0.25252525252525254,
+      "baselinecc": 100,
+      "baselinerc": 15,
+      "baselineda": 86,
+      "revisedcc": 96,
+      "revisedrc": 96,
+      "revisedce": 0.40404040404040403,
+      "revisedrce": 0.40404040404040403
+    },
+    {
+      "forecaster": "SIeeNsXE1j",
+      "n": 66,
+      "brier": 0.13987272727272732,
+      "ece": 0.09909090909090909,
+      "reliability": 0.03875315684315685,
+      "citl": 0.04606060606060611,
+      "dce": 0.10969696969696978,
+      "baseRate": 0.19696969696969696,
+      "baselinecc": 96,
+      "baselinerc": 16,
+      "baselineda": 78,
+      "revisedcc": 88,
+      "revisedrc": 89,
+      "revisedce": 1.2121212121212122,
+      "revisedrce": 1.0606060606060606
+    },
+    {
+      "forecaster": "SZINl91huS",
+      "n": 75,
+      "brier": 0.12152266666666665,
+      "ece": 0.10693333333333331,
+      "reliability": 0.0159964404040404,
+      "citl": -0.05226666666666671,
+      "dce": 0.09200000000000001,
+      "baseRate": 0.18666666666666668,
+      "baselinecc": 95,
+      "baselinerc": 19,
+      "baselineda": 84,
+      "revisedcc": 90,
+      "revisedrc": 92,
+      "revisedce": 1,
+      "revisedrce": 0.84
+    },
+    {
+      "forecaster": "SPxBFWGyEb",
+      "n": 72,
+      "brier": 0.0957111111111111,
+      "ece": 0.10166666666666663,
+      "reliability": 0.01953900205761316,
+      "citl": -0.0666666666666666,
+      "dce": 0.09583333333333333,
+      "baseRate": 0.4444444444444444,
+      "baselinecc": 95,
+      "baselinerc": 35,
+      "baselineda": 80,
+      "revisedcc": 90,
+      "revisedrc": 92,
+      "revisedce": 0.9722222222222222,
+      "revisedrce": 0.8055555555555556
+    },
+    {
+      "forecaster": "S5CrWZaPfh",
+      "n": 63,
+      "brier": 0.11315873015873014,
+      "ece": 0.07333333333333332,
+      "reliability": 0.019262081968589903,
+      "citl": -0.056825396825396834,
+      "dce": 0.0599999999999999,
+      "baseRate": 0.3968253968253968,
+      "baselinecc": 95,
+      "baselinerc": 24,
+      "baselineda": 80,
+      "revisedcc": 95,
+      "revisedrc": 95,
+      "revisedce": 0.5238095238095238,
+      "revisedrce": 0.49206349206349204
+    },
+    {
+      "forecaster": "Si0VpEBOWf",
+      "n": 64,
+      "brier": 0.11338517187500001,
+      "ece": 0.143546875,
+      "reliability": 0.052276553977272724,
+      "citl": -0.04839062499999994,
+      "dce": 0.10979687499999997,
+      "baseRate": 0.296875,
+      "baselinecc": 96,
+      "baselinerc": 25,
+      "baselineda": 81,
+      "revisedcc": 90,
+      "revisedrc": 91,
+      "revisedce": 0.984375,
+      "revisedrce": 0.921875
+    },
+    {
+      "forecaster": "SSPpd7YIH0",
+      "n": 82,
+      "brier": 0.14038170731707322,
+      "ece": 0.14158536585365858,
+      "reliability": 0.04101478222996516,
+      "citl": 0.0018292682926831505,
+      "dce": 0.081341463414634,
+      "baseRate": 0.36585365853658536,
+      "baselinecc": 100,
+      "baselinerc": 18,
+      "baselineda": 75,
+      "revisedcc": 87,
+      "revisedrc": 94,
+      "revisedce": 1.329268292682927,
+      "revisedrce": 0.6463414634146342
+    }
+  ]
+}

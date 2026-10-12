@@ -1,0 +1,439 @@
+{
+  "summary": {
+    "label": "baseline",
+    "environment": {
+      "node": "v22.22.0",
+      "platform": "linux x64",
+      "date": "2026-10-12T18:05:18.358Z",
+      "baseUrl": "http://localhost:3101"
+    },
+    "core": {
+      "passed": 31,
+      "total": 33
+    },
+    "safeguard": {
+      "passed": 2,
+      "total": 13
+    },
+    "all": {
+      "passed": 33,
+      "total": 46
+    }
+  },
+  "results": [
+    {
+      "id": "TC01",
+      "area": "Authentication",
+      "description": "Register with valid details",
+      "expected": "201 and session cookie set",
+      "actual": "201; cookie set",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC02",
+      "area": "Authentication",
+      "description": "Session cookie is HttpOnly, SameSite=Strict, Secure, 7-day expiry",
+      "expected": "All four attributes present",
+      "actual": "auth_token=<token>; Path=/; Expires=Mon, 19 Oct 2026 18:05:10 GMT; Max-Age=604800; Secure; HttpOnly; SameSite=strict",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC03",
+      "area": "Authentication",
+      "description": "Register with an email already in use",
+      "expected": "409",
+      "actual": "409",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC04",
+      "area": "Authentication",
+      "description": "Register with a password under 8 characters",
+      "expected": "400",
+      "actual": "400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC05",
+      "area": "Authentication",
+      "description": "Register with an invalid email format",
+      "expected": "400",
+      "actual": "400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC06",
+      "area": "Authentication",
+      "description": "Log in with correct credentials",
+      "expected": "200 and session cookie set",
+      "actual": "200; cookie set",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC07",
+      "area": "Authentication",
+      "description": "Log in with a wrong password",
+      "expected": "401",
+      "actual": "401",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC08",
+      "area": "Authentication",
+      "description": "Sixth failed login from the same IP within one minute is blocked",
+      "expected": "Attempts 1-5: 401, attempt 6: 429",
+      "actual": "401, 401, 401, 401, 401, 429",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC09",
+      "area": "Route protection",
+      "description": "Open the dashboard without logging in",
+      "expected": "Redirect to /auth/login",
+      "actual": "307 -> /auth/login",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC10",
+      "area": "Route protection",
+      "description": "Call the decisions API without logging in",
+      "expected": "Redirect to /auth/login",
+      "actual": "307 -> /auth/login",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC11",
+      "area": "Route protection",
+      "description": "Call the API with a tampered token",
+      "expected": "Redirect to /auth/login and cookie cleared",
+      "actual": "307; cookie cleared",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC12",
+      "area": "Route protection",
+      "description": "Open the login page while already logged in",
+      "expected": "Redirect to /dashboard",
+      "actual": "307 -> /dashboard",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC13",
+      "area": "Decision logging",
+      "description": "Log a decision with all fields valid",
+      "expected": "201, status \"pending_outcome\"",
+      "actual": "201; pending_outcome",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC14",
+      "area": "Decision logging",
+      "description": "Log a decision with confidence outside 1-10 (0 and 11)",
+      "expected": "400 for both",
+      "actual": "400, 400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC15",
+      "area": "Decision logging",
+      "description": "Log a decision with an unknown category",
+      "expected": "400",
+      "actual": "400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC16",
+      "area": "Decision logging",
+      "description": "Log a decision with a description under 10 characters",
+      "expected": "400",
+      "actual": "400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC17",
+      "area": "Decision logging",
+      "description": "List own decisions",
+      "expected": "200 with both logged decisions",
+      "actual": "200; 2 decisions",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC18",
+      "area": "Decision logging",
+      "description": "Filter decisions by category",
+      "expected": "Only finance decisions returned",
+      "actual": "1 returned; categories: finance",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC19",
+      "area": "Decision logging",
+      "description": "Edit the title of a pending decision",
+      "expected": "200 with updated title",
+      "actual": "200; Accept summer internship offer",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC20",
+      "area": "Access control",
+      "description": "Another user reads user A's decision",
+      "expected": "404",
+      "actual": "404",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC21",
+      "area": "Access control",
+      "description": "Another user deletes user A's decision",
+      "expected": "404 and decision still exists",
+      "actual": "404",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC22",
+      "area": "Access control",
+      "description": "Another user records an outcome on user A's decision",
+      "expected": "404",
+      "actual": "404",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC23",
+      "area": "Outcome recording",
+      "description": "Record an outcome with success rating outside 1-10",
+      "expected": "400",
+      "actual": "400",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC24",
+      "area": "Outcome recording",
+      "description": "Record a valid outcome",
+      "expected": "201; decision status becomes \"outcome_recorded\"",
+      "actual": "201; outcome_recorded",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC25",
+      "area": "Outcome recording",
+      "description": "Record a second outcome for the same decision",
+      "expected": "409",
+      "actual": "409",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC26",
+      "area": "Outcome recording",
+      "description": "Change the original confidence after the outcome is recorded",
+      "expected": "Rejected, so predictions stay fixed",
+      "actual": "200; confidence now 9",
+      "pass": false,
+      "added": false
+    },
+    {
+      "id": "TC27",
+      "area": "Analytics",
+      "description": "Request analytics for a user with no decisions",
+      "expected": "200 with all scores 0",
+      "actual": "200; scores 0/0/0/0",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC28",
+      "area": "Analytics",
+      "description": "Request analytics for a user with one resolved decision",
+      "expected": "200; completed = 1, pending = 1",
+      "actual": "200; completed 1, pending 1",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC29",
+      "area": "Report export",
+      "description": "Export a decision report",
+      "expected": "200, HTML file download",
+      "actual": "200; text/html; attachment; filename=\"decision-003577da.html\"",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC30",
+      "area": "Report export",
+      "description": "Another user exports user A's decision",
+      "expected": "404",
+      "actual": "404",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC31",
+      "area": "Report export",
+      "description": "Export a decision whose title contains HTML markup",
+      "expected": "Markup escaped in the report",
+      "actual": "Markup inserted unescaped",
+      "pass": false,
+      "added": false
+    },
+    {
+      "id": "TC32",
+      "area": "Decision logging",
+      "description": "Delete a decision (outcome removed with it)",
+      "expected": "200, then 404 on read",
+      "actual": "200, then 404",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC33",
+      "area": "Authentication",
+      "description": "Log out",
+      "expected": "200 and session cookie cleared",
+      "actual": "200; cookie cleared",
+      "pass": true,
+      "added": false
+    },
+    {
+      "id": "TC34",
+      "area": "Prediction integrity",
+      "description": "Change the risk level after the outcome is recorded",
+      "expected": "Rejected; stored value unchanged",
+      "actual": "200; changed",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC35",
+      "area": "Prediction integrity",
+      "description": "Change the expected outcome after the outcome is recorded",
+      "expected": "Rejected; stored value unchanged",
+      "actual": "200; changed",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC36",
+      "area": "Prediction integrity",
+      "description": "Change the emotional state after the outcome is recorded",
+      "expected": "Rejected; stored value unchanged",
+      "actual": "200; changed",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC37",
+      "area": "Prediction integrity",
+      "description": "Change the decision date after the outcome is recorded",
+      "expected": "Rejected; stored value unchanged",
+      "actual": "200; changed",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC38",
+      "area": "Prediction integrity",
+      "description": "Rename a resolved decision (title is not part of the prediction)",
+      "expected": "200",
+      "actual": "200",
+      "pass": true,
+      "added": true
+    },
+    {
+      "id": "TC39",
+      "area": "Prediction integrity",
+      "description": "Record an outcome dated before the decision was logged",
+      "expected": "400",
+      "actual": "201",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC40",
+      "area": "Outcome recording",
+      "description": "Submit ten outcomes for one decision at the same time",
+      "expected": "Exactly one accepted and one outcome stored",
+      "actual": "2 accepted (statuses 201/409); 2 stored",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC41",
+      "area": "Report export",
+      "description": "Export a report whose description, expectation, outcome, lesson and reflection contain markup",
+      "expected": "All five fields escaped",
+      "actual": "5 of 5 fields unescaped",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC42",
+      "area": "Access control",
+      "description": "Another user edits user A's decision",
+      "expected": "404",
+      "actual": "404",
+      "pass": true,
+      "added": true
+    },
+    {
+      "id": "TC43",
+      "area": "Analytics",
+      "description": "Open analytics five times on the same day",
+      "expected": "At most one snapshot per user per day",
+      "actual": "5 new rows; 6 snapshots today",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC44",
+      "area": "Analytics",
+      "description": "Confidence off by three steps in opposite directions for low- and high-risk decisions, versus a calibrated twin",
+      "expected": "Lower confidence calibration than the twin",
+      "actual": "100 vs twin 100",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC45",
+      "area": "Analytics",
+      "description": "Same pair of histories: risk calibration",
+      "expected": "Lower risk calibration than the twin",
+      "actual": "55 vs twin 55",
+      "pass": false,
+      "added": true
+    },
+    {
+      "id": "TC46",
+      "area": "Analytics",
+      "description": "Calm decisions whose reflections read \"No regrets; a fearless choice.\"",
+      "expected": "Emotional bias score 0",
+      "actual": "emotional bias 20",
+      "pass": false,
+      "added": true
+    }
+  ]
+}

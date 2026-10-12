@@ -1,0 +1,93 @@
+{
+  "label": "revised",
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:15:49.772Z",
+    "baseUrl": "http://localhost:3112"
+  },
+  "decisions": 100,
+  "reps": 20,
+  "byRtt": {
+    "0": {
+      "analytics": {
+        "n": 20,
+        "median": 17.3,
+        "p95": 23,
+        "min": 12.4,
+        "max": 24.5
+      },
+      "dashboard": {
+        "n": 20,
+        "median": 32.9,
+        "p95": 44.2,
+        "min": 23.4,
+        "max": 135
+      }
+    },
+    "2": {
+      "analytics": {
+        "n": 20,
+        "median": 21.4,
+        "p95": 33.3,
+        "min": 16.9,
+        "max": 34.2
+      },
+      "dashboard": {
+        "n": 20,
+        "median": 36.2,
+        "p95": 48.7,
+        "min": 31,
+        "max": 50
+      }
+    },
+    "5": {
+      "analytics": {
+        "n": 20,
+        "median": 28.4,
+        "p95": 34.4,
+        "min": 22.9,
+        "max": 37.8
+      },
+      "dashboard": {
+        "n": 20,
+        "median": 51.1,
+        "p95": 61.7,
+        "min": 42.9,
+        "max": 75.1
+      }
+    },
+    "10": {
+      "analytics": {
+        "n": 20,
+        "median": 38.1,
+        "p95": 46.6,
+        "min": 34,
+        "max": 47.3
+      },
+      "dashboard": {
+        "n": 20,
+        "median": 58.7,
+        "p95": 94.9,
+        "min": 55,
+        "max": 144.1
+      }
+    },
+    "20": {
+      "analytics": {
+        "n": 20,
+        "median": 59.8,
+        "p95": 65.2,
+        "min": 53.5,
+        "max": 66.3
+      },
+      "dashboard": {
+        "n": 20,
+        "median": 95.6,
+        "p95": 105.6,
+        "min": 87.8,
+        "max": 107.3
+      }
+    }
+  }
+}

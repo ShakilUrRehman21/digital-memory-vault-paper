@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, data or evaluation kit, please cite it as below."
+title: "Digital Memory Vault: paper artefact (application, evaluation kit and data)"
+type: software
+license: MIT
+repository-code: "https://github.com/ShakilUrRehman21/digital-memory-vault-paper"
+authors:
+  - family-names: "Ur Rehman"
+    given-names: "Shakil"
+    orcid: "https://orcid.org/0009-0004-3050-0054"

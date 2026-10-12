@@ -1,0 +1,2461 @@
+{
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:16:16.132Z",
+    "baseUrl": "http://localhost:3000"
+  },
+  "repetitions": 1000,
+  "lengths": [
+    5,
+    10,
+    15,
+    20,
+    30,
+    40,
+    60,
+    80,
+    120
+  ],
+  "minimumHistory": {
+    "perProfile": {
+      "Overconfident (+2)": 10,
+      "Underconfident (-2)": 10,
+      "Inconsistent (+/-2)": 10,
+      "Noisy (SD 2)": 20
+    },
+    "overall": 20
+  },
+  "rows": [
+    {
+      "n": 5,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.733,
+      "sensitivity95": 0.216
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.637,
+      "sensitivity95": 0.161
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.658,
+      "sensitivity95": 0.14
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.675,
+      "sensitivity95": 0.175
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.954,
+      "sensitivity95": 0.725
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.879,
+      "sensitivity95": 0.553
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.901,
+      "sensitivity95": 0.529
+    },
+    {
+      "n": 5,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.92,
+      "sensitivity95": 0.642
+    },
+    {
+      "n": 5,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.957,
+      "sensitivity95": 0.765
+    },
+    {
+      "n": 5,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.9,
+      "sensitivity95": 0.618
+    },
+    {
+      "n": 5,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.915,
+      "sensitivity95": 0.591
+    },
+    {
+      "n": 5,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.927,
+      "sensitivity95": 0.686
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.565,
+      "sensitivity95": 0.063
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.793,
+      "sensitivity95": 0.351
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.644,
+      "sensitivity95": 0.13
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.825,
+      "sensitivity95": 0.374
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.625,
+      "sensitivity95": 0.099
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 0.942,
+      "sensitivity95": 0.726
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 0.867,
+      "sensitivity95": 0.517
+    },
+    {
+      "n": 5,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 0.958,
+      "sensitivity95": 0.76
+    },
+    {
+      "n": 5,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.632,
+      "sensitivity95": 0.175
+    },
+    {
+      "n": 5,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.027
+    },
+    {
+      "n": 5,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.815,
+      "sensitivity95": 0.429
+    },
+    {
+      "n": 5,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.815,
+      "sensitivity95": 0.36
+    },
+    {
+      "n": 5,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.763,
+      "sensitivity95": 0.33
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.832,
+      "sensitivity95": 0.455
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.685,
+      "sensitivity95": 0.2
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.741,
+      "sensitivity95": 0.276
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.779,
+      "sensitivity95": 0.431
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.996,
+      "sensitivity95": 0.958
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.942,
+      "sensitivity95": 0.721
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.974,
+      "sensitivity95": 0.843
+    },
+    {
+      "n": 10,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.988,
+      "sensitivity95": 0.939
+    },
+    {
+      "n": 10,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.995,
+      "sensitivity95": 0.965
+    },
+    {
+      "n": 10,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.953,
+      "sensitivity95": 0.756
+    },
+    {
+      "n": 10,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.977,
+      "sensitivity95": 0.874
+    },
+    {
+      "n": 10,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.989,
+      "sensitivity95": 0.95
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.522,
+      "sensitivity95": 0.056
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.907,
+      "sensitivity95": 0.561
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.651,
+      "sensitivity95": 0.187
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.966,
+      "sensitivity95": 0.855
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.549,
+      "sensitivity95": 0.078
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 0.994,
+      "sensitivity95": 0.952
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 0.951,
+      "sensitivity95": 0.806
+    },
+    {
+      "n": 10,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 10,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.622,
+      "sensitivity95": 0.179
+    },
+    {
+      "n": 10,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 10,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.897,
+      "sensitivity95": 0.604
+    },
+    {
+      "n": 10,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.904,
+      "sensitivity95": 0.624
+    },
+    {
+      "n": 10,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.751,
+      "sensitivity95": 0.366
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.918,
+      "sensitivity95": 0.694
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.727,
+      "sensitivity95": 0.222
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.81,
+      "sensitivity95": 0.375
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.862,
+      "sensitivity95": 0.531
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.976,
+      "sensitivity95": 0.864
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.996,
+      "sensitivity95": 0.978
+    },
+    {
+      "n": 15,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.995
+    },
+    {
+      "n": 15,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 15,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.981,
+      "sensitivity95": 0.893
+    },
+    {
+      "n": 15,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.997,
+      "sensitivity95": 0.979
+    },
+    {
+      "n": 15,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.993
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.941,
+      "sensitivity95": 0.69
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.634,
+      "sensitivity95": 0.16
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.99,
+      "sensitivity95": 0.948
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 0.998,
+      "sensitivity95": 0.992
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 0.973,
+      "sensitivity95": 0.879
+    },
+    {
+      "n": 15,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 15,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.617,
+      "sensitivity95": 0.229
+    },
+    {
+      "n": 15,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.048
+    },
+    {
+      "n": 15,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.941,
+      "sensitivity95": 0.742
+    },
+    {
+      "n": 15,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.946,
+      "sensitivity95": 0.769
+    },
+    {
+      "n": 15,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.761,
+      "sensitivity95": 0.365
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.955,
+      "sensitivity95": 0.815
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.767,
+      "sensitivity95": 0.245
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.87,
+      "sensitivity95": 0.526
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.92,
+      "sensitivity95": 0.651
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.99,
+      "sensitivity95": 0.934
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.996
+    },
+    {
+      "n": 20,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 20,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 20,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.992,
+      "sensitivity95": 0.956
+    },
+    {
+      "n": 20,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 20,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 0.999
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.513,
+      "sensitivity95": 0.068
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.963,
+      "sensitivity95": 0.797
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.636,
+      "sensitivity95": 0.197
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.997,
+      "sensitivity95": 0.983
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.53,
+      "sensitivity95": 0.078
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 0.999,
+      "sensitivity95": 0.997
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 0.987,
+      "sensitivity95": 0.931
+    },
+    {
+      "n": 20,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 20,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.62,
+      "sensitivity95": 0.214
+    },
+    {
+      "n": 20,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 20,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.966,
+      "sensitivity95": 0.824
+    },
+    {
+      "n": 20,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.966,
+      "sensitivity95": 0.85
+    },
+    {
+      "n": 20,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.752,
+      "sensitivity95": 0.324
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.988,
+      "sensitivity95": 0.935
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.818,
+      "sensitivity95": 0.246
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.94,
+      "sensitivity95": 0.65
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.971,
+      "sensitivity95": 0.82
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.997,
+      "sensitivity95": 0.981
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.999,
+      "sensitivity95": 0.988
+    },
+    {
+      "n": 30,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.042
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.985,
+      "sensitivity95": 0.873
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.648,
+      "sensitivity95": 0.169
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 0.996
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.042
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 0.997,
+      "sensitivity95": 0.97
+    },
+    {
+      "n": 30,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 30,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.632,
+      "sensitivity95": 0.209
+    },
+    {
+      "n": 30,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 30,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.986,
+      "sensitivity95": 0.882
+    },
+    {
+      "n": 30,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.991,
+      "sensitivity95": 0.921
+    },
+    {
+      "n": 30,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.749,
+      "sensitivity95": 0.271
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 0.996,
+      "sensitivity95": 0.96
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.84,
+      "sensitivity95": 0.388
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.977,
+      "sensitivity95": 0.891
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.989,
+      "sensitivity95": 0.926
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.999,
+      "sensitivity95": 0.995
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 40,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.493,
+      "sensitivity95": 0.02
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.993,
+      "sensitivity95": 0.959
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.679,
+      "sensitivity95": 0.266
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 0.999
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.507,
+      "sensitivity95": 0.024
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 40,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 40,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.639,
+      "sensitivity95": 0.15
+    },
+    {
+      "n": 40,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.028
+    },
+    {
+      "n": 40,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.994,
+      "sensitivity95": 0.962
+    },
+    {
+      "n": 40,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.996,
+      "sensitivity95": 0.981
+    },
+    {
+      "n": 40,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.755,
+      "sensitivity95": 0.277
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.881,
+      "sensitivity95": 0.392
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.995,
+      "sensitivity95": 0.976
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.988
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 0.999
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.018
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.998,
+      "sensitivity95": 0.977
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.717,
+      "sensitivity95": 0.288
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.018
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 60,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.65,
+      "sensitivity95": 0.142
+    },
+    {
+      "n": 60,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.047
+    },
+    {
+      "n": 60,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 0.999,
+      "sensitivity95": 0.991
+    },
+    {
+      "n": 60,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.996
+    },
+    {
+      "n": 60,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.753,
+      "sensitivity95": 0.256
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.915,
+      "sensitivity95": 0.691
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 0.999,
+      "sensitivity95": 0.987
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.503,
+      "sensitivity95": 0.036
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.753,
+      "sensitivity95": 0.207
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.505,
+      "sensitivity95": 0.041
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.651,
+      "sensitivity95": 0.193
+    },
+    {
+      "n": 80,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.04
+    },
+    {
+      "n": 80,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 80,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 0.998
+    },
+    {
+      "n": 80,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.759,
+      "sensitivity95": 0.313
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "baseline decision accuracy",
+      "auc": 0.948,
+      "sensitivity95": 0.714
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+1)",
+      "kind": "over",
+      "size": 1,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Overconfident (+2)",
+      "kind": "over",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Underconfident (-2)",
+      "kind": "under",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.007
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 0.802,
+      "sensitivity95": 0.266
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-2)",
+      "kind": "inconsistent",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline confidence calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.007
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Inconsistent (+/-3)",
+      "kind": "inconsistent",
+      "size": 3,
+      "score": "revised risk calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline confidence calibration",
+      "auc": 0.642,
+      "sensitivity95": 0.11
+    },
+    {
+      "n": 120,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline risk calibration",
+      "auc": 0.5,
+      "sensitivity95": 0.037
+    },
+    {
+      "n": 120,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "baseline decision accuracy",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised confidence calibration",
+      "auc": 1,
+      "sensitivity95": 1
+    },
+    {
+      "n": 120,
+      "profile": "Noisy (SD 2)",
+      "kind": "noisy",
+      "size": 2,
+      "score": "revised risk calibration",
+      "auc": 0.749,
+      "sensitivity95": 0.366
+    }
+  ]
+}

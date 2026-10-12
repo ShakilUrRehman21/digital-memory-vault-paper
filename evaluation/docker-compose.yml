@@ -1,0 +1,9 @@
+# PostgreSQL 16 for the evaluation kit: docker compose -f evaluation/docker-compose.yml up -d
+# then run: PGURL=postgres://postgres:postgres@localhost:5432 evaluation/run-all.sh
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"

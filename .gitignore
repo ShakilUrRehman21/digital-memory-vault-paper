@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env*
+*.tsbuildinfo
+.DS_Store
+evaluation/.stryker-tmp/
+paper/*.aux
+paper/*.log
+paper/*.out

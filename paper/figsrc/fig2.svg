@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 84" width="131mm" height="84mm" font-family="FreeSans, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 6 6" refX="5.5" refY="3" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#333"/></marker>
+    <style>
+      .box { fill: #ffffff; stroke: #333; stroke-width: 0.3; }
+      .sut { fill: #ffffff; stroke: #333; stroke-width: 0.3; }
+      .orc { fill: #ffffff; stroke: #000; stroke-width: 0.6; }
+      .t { font-size: 3.0px; font-weight: bold; fill: #111; }
+      .s { font-size: 2.55px; fill: #333; }
+      .h { font-size: 2.8px; font-weight: bold; fill: #444; letter-spacing: 0.25px; }
+      .ln { stroke: #333; stroke-width: 0.3; fill: none; marker-end: url(#ah); }
+      .dl { stroke: #333; stroke-width: 0.3; fill: none; stroke-dasharray: 1.2 0.8; marker-end: url(#ah); }
+    </style>
+  </defs>
+  <text class="h" x="2" y="4">SYSTEM UNDER TEST</text>
+  <text class="h" x="41" y="4">ORACLE</text>
+  <text class="h" x="99" y="4">EVIDENCE</text>
+
+  <!-- system under test -->
+  <rect class="sut" x="2" y="7" width="33" height="20" rx="0.8"/>
+  <text class="t" x="4" y="11.5">Running application</text>
+  <text class="s" x="4" y="15">baseline and revised,</text>
+  <text class="s" x="4" y="18">built from source with</text>
+  <text class="s" x="4" y="21">local PostgreSQL 16</text>
+  <rect class="sut" x="2" y="47" width="33" height="20" rx="0.8"/>
+  <text class="t" x="4" y="51.5">Scoring rules</text>
+  <text class="s" x="4" y="55">as pure functions</text>
+  <text class="s" x="4" y="58">(baseline extracted</text>
+  <text class="s" x="4" y="61">verbatim; revised</text>
+  <text class="s" x="4" y="64">= scores.ts)</text>
+  <path class="dl" d="M18.5,27 L18.5,46.8"/>
+  <text class="s" x="20" y="35">differential check:</text>
+  <text class="s" x="20" y="38">API output equals</text>
+  <text class="s" x="20" y="41">pure functions</text>
+
+  <!-- oracles -->
+  <rect class="orc" x="41" y="7" width="54" height="9" rx="0.8"/>
+  <text class="t" x="43" y="10.8">Expected status and stored state</text>
+  <text class="s" x="43" y="14">46 functional and safeguard tests</text>
+  <rect class="orc" x="41" y="18" width="54" height="9" rx="0.8"/>
+  <text class="t" x="43" y="21.8">Query counts, latency, throughput</text>
+  <text class="s" x="43" y="25">proxy counts SQL; emulated round trips</text>
+
+  <rect class="orc" x="41" y="34" width="54" height="10" rx="0.8"/>
+  <text class="t" x="43" y="37.8">Metamorphic relations</text>
+  <text class="s" x="43" y="41.2">relations implied by the score's name</text>
+  <rect class="orc" x="41" y="46" width="54" height="10" rx="0.8"/>
+  <text class="t" x="43" y="49.8">Synthetic users, known behaviour</text>
+  <text class="s" x="43" y="53.2">bias is set by the generator, so truth is known</text>
+  <rect class="orc" x="41" y="58" width="54" height="10" rx="0.8"/>
+  <text class="t" x="43" y="61.8">Real forecasts, reference measures</text>
+  <text class="s" x="43" y="65.2">ForecastBench; standard calibration measures</text>
+  <rect class="orc" x="41" y="70" width="54" height="10" rx="0.8"/>
+  <text class="t" x="43" y="73.8">Injected faults (mutants)</text>
+  <text class="s" x="43" y="77.2">a good test set fails on mutated scoring code</text>
+
+  <!-- evidence -->
+  <rect class="box" x="99" y="7" width="30" height="20" rx="0.8"/>
+  <text class="s" x="101" y="11.5">pass/fail per test;</text>
+  <text class="s" x="101" y="14.5">statements per request;</text>
+  <text class="s" x="101" y="17.5">median and 95th pct.</text>
+  <text class="s" x="101" y="20.5">latency; requests/s</text>
+  <rect class="box" x="99" y="34" width="30" height="10" rx="0.8"/>
+  <text class="s" x="101" y="38">violation rate per</text><text class="s" x="101" y="41">relation and score</text>
+  <rect class="box" x="99" y="46" width="30" height="10" rx="0.8"/>
+  <text class="s" x="101" y="50">AUC and sensitivity</text><text class="s" x="101" y="53">vs history length</text>
+  <rect class="box" x="99" y="58" width="30" height="10" rx="0.8"/>
+  <text class="s" x="101" y="62">rank correlation;</text><text class="s" x="101" y="65">agreement</text>
+  <rect class="box" x="99" y="70" width="30" height="10" rx="0.8"/>
+  <text class="s" x="101" y="74">mutation score per</text><text class="s" x="101" y="77">test set</text>
+
+  <!-- arrows -->
+  <path class="ln" d="M35,12 L40.8,12"/>
+  <path class="ln" d="M35,22 L40.8,22"/>
+  <path class="ln" d="M35,52 L40.8,39"/>
+  <path class="ln" d="M35,56 L40.8,51"/>
+  <path class="ln" d="M35,60 L40.8,63"/>
+  <path class="ln" d="M35,64 L40.8,75"/>
+  <path class="ln" d="M95,12 L98.8,12"/>
+  <path class="ln" d="M95,22 L98.8,22"/>
+  <path class="ln" d="M95,39 L98.8,39"/>
+  <path class="ln" d="M95,51 L98.8,51"/>
+  <path class="ln" d="M95,63 L98.8,63"/>
+  <path class="ln" d="M95,75 L98.8,75"/>
+</svg>

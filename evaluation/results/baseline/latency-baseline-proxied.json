@@ -1,0 +1,120 @@
+{
+  "label": "baseline-proxied",
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:09:51.015Z",
+    "baseUrl": "http://localhost:3111"
+  },
+  "reps": 5,
+  "endpoints": {
+    "Register": {
+      "n": 20,
+      "median": 461.7,
+      "p95": 566.9,
+      "min": 435.9,
+      "max": 608.9
+    },
+    "Log in": {
+      "n": 20,
+      "median": 470.5,
+      "p95": 509.3,
+      "min": 428.1,
+      "max": 510.7
+    },
+    "Log a decision": {
+      "n": 5,
+      "median": 16.3,
+      "p95": 24.3,
+      "min": 11,
+      "max": 24.3
+    },
+    "Record an outcome": {
+      "n": 5,
+      "median": 20.3,
+      "p95": 24.4,
+      "min": 14.9,
+      "max": 24.4
+    },
+    "List decisions (5 decisions)": {
+      "n": 5,
+      "median": 10.2,
+      "p95": 17.6,
+      "min": 9.2,
+      "max": 17.6
+    },
+    "View one decision": {
+      "n": 5,
+      "median": 14.3,
+      "p95": 26.9,
+      "min": 12.2,
+      "max": 26.9
+    },
+    "Export a report": {
+      "n": 5,
+      "median": 15.7,
+      "p95": 36.7,
+      "min": 11.5,
+      "max": 36.7
+    }
+  },
+  "analyticsByN": {
+    "20": {
+      "n": 5,
+      "median": 45,
+      "p95": 64.4,
+      "min": 41.4,
+      "max": 64.4,
+      "snapshotRowsAfter": 7
+    },
+    "100": {
+      "n": 5,
+      "median": 123.5,
+      "p95": 299.1,
+      "min": 106.3,
+      "max": 299.1,
+      "snapshotRowsAfter": 7
+    },
+    "500": {
+      "n": 5,
+      "median": 573.7,
+      "p95": 706.1,
+      "min": 529.7,
+      "max": 706.1,
+      "snapshotRowsAfter": 7
+    }
+  },
+  "dashboardByN": {
+    "20": {
+      "n": 5,
+      "median": 80.5,
+      "p95": 82.1,
+      "min": 57.2,
+      "max": 82.1
+    },
+    "100": {
+      "n": 5,
+      "median": 158,
+      "p95": 206.7,
+      "min": 137.8,
+      "max": 206.7
+    },
+    "500": {
+      "n": 5,
+      "median": 763.5,
+      "p95": 881.9,
+      "min": 550.4,
+      "max": 881.9
+    }
+  },
+  "statementsPerAnalyticsRequest": {
+    "20": 22,
+    "100": 102,
+    "500": 502
+  },
+  "statementsPerDashboardRequest": {
+    "20": 22,
+    "100": 102,
+    "500": 502
+  }
+}

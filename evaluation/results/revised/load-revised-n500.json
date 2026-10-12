@@ -1,0 +1,17 @@
+{
+  "label": "revised",
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:15:48.974Z",
+    "baseUrl": "http://localhost:3102"
+  },
+  "concurrency": 10,
+  "seconds": 20,
+  "decisions": 500,
+  "requests": 1074,
+  "errors": 0,
+  "throughput": 53.7,
+  "median": 175.7,
+  "p95": 266.1
+}

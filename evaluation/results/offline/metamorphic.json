@@ -1,0 +1,451 @@
+{
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:16:05.086Z",
+    "baseUrl": "http://localhost:3000"
+  },
+  "sources": 1000,
+  "results": [
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 142,
+      "sources": 1000,
+      "rate": 0.142
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 1,
+      "sources": 1000,
+      "rate": 0.001
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR7",
+      "relation": "Negated warning words add no bias",
+      "description": "Appending \"No regrets, not anxious.\" to every reflection must not increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR7",
+      "relation": "Negated warning words add no bias",
+      "description": "Appending \"No regrets, not anxious.\" to every reflection must not increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR8",
+      "relation": "Words that merely contain a warning word add no bias",
+      "description": "Appending \"Fearless and undoubtedly sound.\" must not increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR8",
+      "relation": "Words that merely contain a warning word add no bias",
+      "description": "Appending \"Fearless and undoubtedly sound.\" must not increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR9",
+      "relation": "Inflected warning words are recognised",
+      "description": "Appending \"Panicked and regretted it.\" to calm, otherwise neutral reflections must increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR9",
+      "relation": "Inflected warning words are recognised",
+      "description": "Appending \"Panicked and regretted it.\" to calm, otherwise neutral reflections must increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    }
+  ]
+}

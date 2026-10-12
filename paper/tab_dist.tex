@@ -1,0 +1,13 @@
+\footnotesize
+\begin{tabular}{@{}lL{4.6cm}cccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Baseline rules} & \multicolumn{2}{c}{Revised rules}\\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+ & Distortion & CC & RC & CC & RC\\
+\midrule
+D1 & Uniform overconfidence: $p+0.2$ & 95 & 0 & 100 & 97\\
+D2 & Uniform underconfidence: $p-0.2$ & 90 & 0 & 87 & 85\\
+D3 & Opposite errors by domain: market $-0.2$, event $+0.2$ & 69 & 0 & 85 & 92\\
+D4 & Extremised: logit doubled & 28 & 0 & 62 & 33\\
+\botrule
+\end{tabular}

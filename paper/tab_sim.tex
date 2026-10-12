@@ -1,0 +1,13 @@
+\footnotesize
+\begin{tabular}{@{}lrcccccc@{}}
+\toprule
+ & Mean gap & Accuracy & \multicolumn{2}{c}{Baseline rules} & \multicolumn{2}{c}{Revised rules}\\
+\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Profile & (steps) & (both) & CC & RC & CC & RC\\
+\midrule
+Calibrated & 0.0 & 86.2 (1.8) & 98.2 (1.4) & 57.7 (2.9) & 93.3 (1.6) & 97.0 (1.4)\\
+Overconfident & 1.9 & 79.2 (2.4) & 81.4 (2.5) & 57.7 (2.9) & 81.1 (2.4) & 81.4 (2.5)\\
+Underconfident & $-$1.9 & 78.4 (1.9) & 80.6 (2.4) & 57.7 (2.9) & 80.3 (2.4) & 80.6 (2.4)\\
+Inconsistent & $-$0.1 & 75.1 (2.1) & 98.2 (1.8) & 57.7 (2.9) & 82.0 (3.4) & 79.0 (2.0)\\
+\botrule
+\end{tabular}

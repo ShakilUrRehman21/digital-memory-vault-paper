@@ -1,0 +1,4627 @@
+{
+  "baseline": {
+    "functional": {
+      "label": "baseline",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:05:18.358Z",
+        "baseUrl": "http://localhost:3101"
+      },
+      "core": {
+        "passed": 31,
+        "total": 33
+      },
+      "safeguard": {
+        "passed": 2,
+        "total": 13
+      },
+      "all": {
+        "passed": 33,
+        "total": 46
+      }
+    },
+    "byArea": {
+      "Authentication": {
+        "tests": 9,
+        "passed": 9
+      },
+      "Route protection": {
+        "tests": 4,
+        "passed": 4
+      },
+      "Decision logging": {
+        "tests": 8,
+        "passed": 8
+      },
+      "Access control": {
+        "tests": 4,
+        "passed": 4
+      },
+      "Outcome recording": {
+        "tests": 5,
+        "passed": 3
+      },
+      "Analytics": {
+        "tests": 6,
+        "passed": 2
+      },
+      "Report export": {
+        "tests": 4,
+        "passed": 2
+      },
+      "Prediction integrity": {
+        "tests": 6,
+        "passed": 1
+      }
+    },
+    "latency": {
+      "label": "baseline",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:07:31.331Z",
+        "baseUrl": "http://localhost:3101"
+      },
+      "reps": 30,
+      "endpoints": {
+        "Register": {
+          "n": 20,
+          "median": 478.3,
+          "p95": 542.9,
+          "min": 445.9,
+          "max": 560.1
+        },
+        "Log in": {
+          "n": 20,
+          "median": 477.5,
+          "p95": 545.7,
+          "min": 428.8,
+          "max": 622.2
+        },
+        "Log a decision": {
+          "n": 30,
+          "median": 8.6,
+          "p95": 16.5,
+          "min": 6.1,
+          "max": 16.8
+        },
+        "Record an outcome": {
+          "n": 30,
+          "median": 12,
+          "p95": 19.9,
+          "min": 8.6,
+          "max": 20.6
+        },
+        "List decisions (30 decisions)": {
+          "n": 30,
+          "median": 7.2,
+          "p95": 12.8,
+          "min": 6,
+          "max": 14.6
+        },
+        "View one decision": {
+          "n": 30,
+          "median": 8.7,
+          "p95": 13.6,
+          "min": 6.4,
+          "max": 17.9
+        },
+        "Export a report": {
+          "n": 30,
+          "median": 6.8,
+          "p95": 12.3,
+          "min": 5.9,
+          "max": 19.8
+        }
+      },
+      "analyticsByN": {
+        "10": {
+          "n": 30,
+          "median": 20.1,
+          "p95": 30.4,
+          "min": 13.8,
+          "max": 31.2,
+          "snapshotRowsAfter": 31
+        },
+        "50": {
+          "n": 30,
+          "median": 45.7,
+          "p95": 74.3,
+          "min": 38.4,
+          "max": 75.4,
+          "snapshotRowsAfter": 31
+        },
+        "100": {
+          "n": 30,
+          "median": 79.1,
+          "p95": 102.7,
+          "min": 68.7,
+          "max": 120.2,
+          "snapshotRowsAfter": 31
+        },
+        "250": {
+          "n": 30,
+          "median": 192.7,
+          "p95": 272.8,
+          "min": 171.4,
+          "max": 372.8,
+          "snapshotRowsAfter": 31
+        },
+        "500": {
+          "n": 30,
+          "median": 402.7,
+          "p95": 505,
+          "min": 352.4,
+          "max": 528.1,
+          "snapshotRowsAfter": 31
+        },
+        "1000": {
+          "n": 30,
+          "median": 924.1,
+          "p95": 1107.6,
+          "min": 789.4,
+          "max": 1145.2,
+          "snapshotRowsAfter": 31
+        }
+      },
+      "dashboardByN": {
+        "10": {
+          "n": 30,
+          "median": 30.4,
+          "p95": 56.7,
+          "min": 22.3,
+          "max": 73.2
+        },
+        "50": {
+          "n": 30,
+          "median": 64.9,
+          "p95": 92.4,
+          "min": 50.4,
+          "max": 113.1
+        },
+        "100": {
+          "n": 30,
+          "median": 106.8,
+          "p95": 152,
+          "min": 87.7,
+          "max": 165.9
+        },
+        "250": {
+          "n": 30,
+          "median": 219.1,
+          "p95": 323,
+          "min": 181.6,
+          "max": 424.8
+        },
+        "500": {
+          "n": 30,
+          "median": 458,
+          "p95": 653,
+          "min": 393.3,
+          "max": 800.3
+        },
+        "1000": {
+          "n": 30,
+          "median": 975.3,
+          "p95": 1249.2,
+          "min": 863.1,
+          "max": 1275.2
+        }
+      },
+      "statementsPerAnalyticsRequest": {
+        "10": null,
+        "50": null,
+        "100": null,
+        "250": null,
+        "500": null,
+        "1000": null
+      },
+      "statementsPerDashboardRequest": {
+        "10": null,
+        "50": null,
+        "100": null,
+        "250": null,
+        "500": null,
+        "1000": null
+      }
+    },
+    "statements": {
+      "20": 22,
+      "100": 102,
+      "500": 502
+    },
+    "dashStatements": {
+      "20": 22,
+      "100": 102,
+      "500": 502
+    },
+    "load": {
+      "100": {
+        "label": "baseline",
+        "environment": {
+          "node": "v22.22.0",
+          "platform": "linux x64",
+          "date": "2026-10-12T18:10:48.779Z",
+          "baseUrl": "http://localhost:3101"
+        },
+        "concurrency": 10,
+        "seconds": 20,
+        "decisions": 100,
+        "requests": 196,
+        "errors": 0,
+        "throughput": 9.8,
+        "median": 1025,
+        "p95": 1236.9
+      },
+      "500": {
+        "label": "baseline",
+        "environment": {
+          "node": "v22.22.0",
+          "platform": "linux x64",
+          "date": "2026-10-12T18:11:15.821Z",
+          "baseUrl": "http://localhost:3101"
+        },
+        "concurrency": 10,
+        "seconds": 20,
+        "decisions": 500,
+        "requests": 49,
+        "errors": 0,
+        "throughput": 2.5,
+        "median": 4744.9,
+        "p95": 5124.7
+      }
+    },
+    "net": {
+      "label": "baseline",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:11:16.518Z",
+        "baseUrl": "http://localhost:3111"
+      },
+      "decisions": 100,
+      "reps": 20,
+      "byRtt": {
+        "0": {
+          "analytics": {
+            "n": 20,
+            "median": 107.5,
+            "p95": 146.6,
+            "min": 100.7,
+            "max": 182.6
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 129.3,
+            "p95": 172.9,
+            "min": 112.3,
+            "max": 254.1
+          }
+        },
+        "2": {
+          "analytics": {
+            "n": 20,
+            "median": 118.3,
+            "p95": 158.7,
+            "min": 105.7,
+            "max": 159.5
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 126.9,
+            "p95": 140.1,
+            "min": 115.3,
+            "max": 147.6
+          }
+        },
+        "5": {
+          "analytics": {
+            "n": 20,
+            "median": 147.2,
+            "p95": 169.6,
+            "min": 135.3,
+            "max": 175.8
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 172.7,
+            "p95": 210.1,
+            "min": 149.8,
+            "max": 222.7
+          }
+        },
+        "10": {
+          "analytics": {
+            "n": 20,
+            "median": 195.9,
+            "p95": 231.4,
+            "min": 171.8,
+            "max": 262.6
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 209.6,
+            "p95": 295,
+            "min": 193.7,
+            "max": 400.1
+          }
+        },
+        "20": {
+          "analytics": {
+            "n": 20,
+            "median": 295,
+            "p95": 312.5,
+            "min": 283.1,
+            "max": 319.2
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 314.9,
+            "p95": 352.5,
+            "min": 300.4,
+            "max": 379.3
+          }
+        }
+      }
+    },
+    "diff": {
+      "label": "baseline",
+      "version": "baseline",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:07:31.205Z",
+        "baseUrl": "http://localhost:3101"
+      },
+      "usersPerProfile": 25,
+      "decisionsPerUser": 40,
+      "mismatchedValues": 0,
+      "comparedValues": 606,
+      "summary": {
+        "Calibrated": {
+          "meanGap": {
+            "mean": -0.01,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 86.16,
+            "sd": 1.77
+          },
+          "confidenceCalibrationScore": {
+            "mean": 98.24,
+            "sd": 1.39
+          },
+          "riskCalibrationScore": {
+            "mean": 57.68,
+            "sd": 2.94
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 20.2,
+            "sd": 4.67
+          },
+          "underconfidenceRate": {
+            "mean": 20.8,
+            "sd": 6.78
+          }
+        },
+        "Overconfident": {
+          "meanGap": {
+            "mean": 1.88,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 79.24,
+            "sd": 2.39
+          },
+          "confidenceCalibrationScore": {
+            "mean": 81.36,
+            "sd": 2.46
+          },
+          "riskCalibrationScore": {
+            "mean": 57.68,
+            "sd": 2.94
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 57.96,
+            "sd": 7.91
+          },
+          "underconfidenceRate": {
+            "mean": 2.52,
+            "sd": 2.24
+          }
+        },
+        "Underconfident": {
+          "meanGap": {
+            "mean": -1.95,
+            "sd": 0.23
+          },
+          "decisionAccuracyScore": {
+            "mean": 78.44,
+            "sd": 1.94
+          },
+          "confidenceCalibrationScore": {
+            "mean": 80.64,
+            "sd": 2.4
+          },
+          "riskCalibrationScore": {
+            "mean": 57.68,
+            "sd": 2.94
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 2.84,
+            "sd": 2.67
+          },
+          "underconfidenceRate": {
+            "mean": 59.88,
+            "sd": 6.57
+          }
+        },
+        "Inconsistent": {
+          "meanGap": {
+            "mean": -0.09,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 75.12,
+            "sd": 2.11
+          },
+          "confidenceCalibrationScore": {
+            "mean": 98.24,
+            "sd": 1.81
+          },
+          "riskCalibrationScore": {
+            "mean": 57.68,
+            "sd": 2.94
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 32.24,
+            "sd": 5.37
+          },
+          "underconfidenceRate": {
+            "mean": 34.96,
+            "sd": 4.6
+          }
+        }
+      },
+      "workedExample": {
+        "api": {
+          "decisionAccuracyScore": 77,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 18,
+          "confidenceCalibrationScore": 91,
+          "totalDecisions": 10,
+          "pendingDecisions": 0,
+          "completedDecisions": 10,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 20,
+          "highRiskSuccessRate": 35,
+          "lowRiskSuccessRate": 77,
+          "decisionsByCategory": {
+            "product": 10
+          },
+          "confidenceVsOutcome": [
+            {
+              "confidence": 8,
+              "outcome": 9,
+              "title": "Accept internship offer",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 7,
+              "outcome": 7,
+              "title": "Buy a laptop on instalments",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 9,
+              "outcome": 3,
+              "title": "Launch feature without user testing",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 6,
+              "outcome": 8,
+              "title": "Join a morning gym batch",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 7,
+              "outcome": 5,
+              "title": "Move to a shared flat",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 8,
+              "outcome": 4,
+              "title": "Switch database provider mid-sprint",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 5,
+              "outcome": 8,
+              "title": "Apply for a hackathon",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 6,
+              "outcome": 6,
+              "title": "Invest savings in an index fund",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 9,
+              "outcome": 5,
+              "title": "Hire a freelance designer",
+              "date": "2026-09-01T00:00:00.000Z"
+            },
+            {
+              "confidence": 7,
+              "outcome": 8,
+              "title": "Start a weekend course",
+              "date": "2026-09-01T00:00:00.000Z"
+            }
+          ],
+          "monthlyTrend": [
+            {
+              "month": "2026-09",
+              "count": 10,
+              "avgScore": 6
+            }
+          ],
+          "emotionalDistribution": {
+            "calm": 5,
+            "excited": 2,
+            "pressured": 1,
+            "uncertain": 1,
+            "stressed": 1
+          },
+          "riskDistribution": {
+            "low": 3,
+            "medium": 5,
+            "high": 2
+          }
+        },
+        "pure": {
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 91,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 18,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 20,
+          "highRiskSuccessRate": 35,
+          "lowRiskSuccessRate": 77
+        },
+        "mismatched": []
+      },
+      "users": [
+        {
+          "profile": "Calibrated",
+          "user": 0,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 1,
+          "meanGap": 0.225,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 52,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 2,
+          "meanGap": -0.5,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 64,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 3,
+          "meanGap": -0.225,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 4,
+          "meanGap": 0.05,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 51,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 5,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 6,
+          "meanGap": 0.175,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 7,
+          "meanGap": 0.2,
+          "decisionAccuracyScore": 89,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 10,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 8,
+          "meanGap": 0.2,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 9,
+          "meanGap": -0.375,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 96,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 10,
+          "meanGap": -0.35,
+          "decisionAccuracyScore": 84,
+          "confidenceCalibrationScore": 97,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 11,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 55,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 12,
+          "meanGap": 0.55,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 13,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 14,
+          "meanGap": -0.075,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 13,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 15,
+          "meanGap": -0.35,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 97,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 16,
+          "meanGap": -0.125,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 13,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 17,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 54,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 18,
+          "meanGap": -0.025,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 19,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 20,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 21,
+          "meanGap": -0.15,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 23,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 22,
+          "meanGap": 0.225,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 23,
+          "meanGap": -0.25,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 24,
+          "meanGap": -0.175,
+          "decisionAccuracyScore": 89,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 0,
+          "meanGap": 2,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 53,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 1,
+          "meanGap": 2.175,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 78,
+          "riskCalibrationScore": 52,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 70,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 2,
+          "meanGap": 1.4,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 86,
+          "riskCalibrationScore": 64,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 45,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 3,
+          "meanGap": 1.725,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 4,
+          "meanGap": 2,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 51,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 5,
+          "meanGap": 1.9,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 6,
+          "meanGap": 2.05,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 63,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 7,
+          "meanGap": 1.975,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 8,
+          "meanGap": 2.125,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 9,
+          "meanGap": 1.55,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 48,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 10,
+          "meanGap": 1.5,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 8,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 11,
+          "meanGap": 1.975,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 55,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 12,
+          "meanGap": 2.375,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 76,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 73,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 13,
+          "meanGap": 2.025,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 14,
+          "meanGap": 1.775,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 48,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 15,
+          "meanGap": 1.525,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 16,
+          "meanGap": 1.775,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 17,
+          "meanGap": 1.95,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 54,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 18,
+          "meanGap": 1.95,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 19,
+          "meanGap": 1.85,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 57,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 20,
+          "meanGap": 2.1,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 21,
+          "meanGap": 1.675,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 22,
+          "meanGap": 2.125,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 23,
+          "meanGap": 1.65,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 84,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 24,
+          "meanGap": 1.75,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 0,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 1,
+          "meanGap": -1.7,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 52,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 2,
+          "meanGap": -2.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 75,
+          "riskCalibrationScore": 64,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 73,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 3,
+          "meanGap": -2.125,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 4,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 51,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 5,
+          "meanGap": -1.9,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 53,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 6,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 53,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 7,
+          "meanGap": -1.725,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 8,
+          "meanGap": -1.725,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 65,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 9,
+          "meanGap": -2.3,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 77,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 10,
+          "meanGap": -2.225,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 78,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 11,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 55,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 63,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 12,
+          "meanGap": -1.425,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 86,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 43,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 13,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 14,
+          "meanGap": -2.025,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 63,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 15,
+          "meanGap": -2.275,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 77,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 65,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 16,
+          "meanGap": -2.025,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 17,
+          "meanGap": -1.775,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 54,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 55,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 18,
+          "meanGap": -2,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 19,
+          "meanGap": -1.9,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 55,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 20,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 21,
+          "meanGap": -2.1,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 22,
+          "meanGap": -1.775,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 23,
+          "meanGap": -2.125,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 24,
+          "meanGap": -2.075,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 0,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 28,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 1,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 52,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 2,
+          "meanGap": -0.575,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 64,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 3,
+          "meanGap": -0.3,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 97,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 45,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 4,
+          "meanGap": -0.025,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 51,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 5,
+          "meanGap": -0.05,
+          "decisionAccuracyScore": 72,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 40,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 6,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 45,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 7,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 8,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 75,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 9,
+          "meanGap": -0.45,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 96,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 40,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 10,
+          "meanGap": -0.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 11,
+          "meanGap": 0,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 55,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 12,
+          "meanGap": 0.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 13,
+          "meanGap": 0.05,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 14,
+          "meanGap": -0.15,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 62,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 15,
+          "meanGap": -0.425,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 96,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 16,
+          "meanGap": -0.2,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 58,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 17,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 54,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 18,
+          "meanGap": -0.1,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 43,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 19,
+          "meanGap": -0.05,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 100,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 20,
+          "meanGap": 0.075,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 21,
+          "meanGap": -0.225,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 60,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 28,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 22,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 99,
+          "riskCalibrationScore": 57,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 23,
+          "meanGap": -0.325,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 97,
+          "riskCalibrationScore": 59,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 24,
+          "meanGap": -0.25,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 98,
+          "riskCalibrationScore": 56,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        }
+      ]
+    }
+  },
+  "revised": {
+    "functional": {
+      "label": "revised",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:12:08.177Z",
+        "baseUrl": "http://localhost:3102"
+      },
+      "core": {
+        "passed": 33,
+        "total": 33
+      },
+      "safeguard": {
+        "passed": 13,
+        "total": 13
+      },
+      "all": {
+        "passed": 46,
+        "total": 46
+      }
+    },
+    "byArea": {
+      "Authentication": {
+        "tests": 9,
+        "passed": 9
+      },
+      "Route protection": {
+        "tests": 4,
+        "passed": 4
+      },
+      "Decision logging": {
+        "tests": 8,
+        "passed": 8
+      },
+      "Access control": {
+        "tests": 4,
+        "passed": 4
+      },
+      "Outcome recording": {
+        "tests": 5,
+        "passed": 5
+      },
+      "Analytics": {
+        "tests": 6,
+        "passed": 6
+      },
+      "Report export": {
+        "tests": 4,
+        "passed": 4
+      },
+      "Prediction integrity": {
+        "tests": 6,
+        "passed": 6
+      }
+    },
+    "latency": {
+      "label": "revised",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:14:06.089Z",
+        "baseUrl": "http://localhost:3102"
+      },
+      "reps": 30,
+      "endpoints": {
+        "Register": {
+          "n": 20,
+          "median": 464.3,
+          "p95": 553.7,
+          "min": 437.2,
+          "max": 600.9
+        },
+        "Log in": {
+          "n": 20,
+          "median": 458.1,
+          "p95": 505.8,
+          "min": 424,
+          "max": 566.2
+        },
+        "Log a decision": {
+          "n": 30,
+          "median": 8.6,
+          "p95": 11.6,
+          "min": 6.3,
+          "max": 12
+        },
+        "Record an outcome": {
+          "n": 30,
+          "median": 8.9,
+          "p95": 12.5,
+          "min": 7.9,
+          "max": 12.6
+        },
+        "List decisions (30 decisions)": {
+          "n": 30,
+          "median": 5.5,
+          "p95": 10.6,
+          "min": 4.8,
+          "max": 11.6
+        },
+        "View one decision": {
+          "n": 30,
+          "median": 5.3,
+          "p95": 9.9,
+          "min": 4.7,
+          "max": 11.1
+        },
+        "Export a report": {
+          "n": 30,
+          "median": 5.8,
+          "p95": 14.3,
+          "min": 4.9,
+          "max": 14.7
+        }
+      },
+      "analyticsByN": {
+        "10": {
+          "n": 30,
+          "median": 9.8,
+          "p95": 18.3,
+          "min": 7.3,
+          "max": 18.6,
+          "snapshotRowsAfter": 1
+        },
+        "50": {
+          "n": 30,
+          "median": 8.7,
+          "p95": 14,
+          "min": 7.1,
+          "max": 14.3,
+          "snapshotRowsAfter": 1
+        },
+        "100": {
+          "n": 30,
+          "median": 10,
+          "p95": 19.2,
+          "min": 8.6,
+          "max": 25,
+          "snapshotRowsAfter": 1
+        },
+        "250": {
+          "n": 30,
+          "median": 16.3,
+          "p95": 37.7,
+          "min": 11.5,
+          "max": 41.6,
+          "snapshotRowsAfter": 1
+        },
+        "500": {
+          "n": 30,
+          "median": 21.8,
+          "p95": 36.2,
+          "min": 17.8,
+          "max": 55.2,
+          "snapshotRowsAfter": 1
+        },
+        "1000": {
+          "n": 30,
+          "median": 36.7,
+          "p95": 71.1,
+          "min": 28.6,
+          "max": 195.8,
+          "snapshotRowsAfter": 1
+        }
+      },
+      "dashboardByN": {
+        "10": {
+          "n": 30,
+          "median": 18.3,
+          "p95": 49,
+          "min": 13.7,
+          "max": 62.7
+        },
+        "50": {
+          "n": 30,
+          "median": 19.1,
+          "p95": 26.9,
+          "min": 14.5,
+          "max": 28
+        },
+        "100": {
+          "n": 30,
+          "median": 22.5,
+          "p95": 36.1,
+          "min": 18.2,
+          "max": 86.4
+        },
+        "250": {
+          "n": 30,
+          "median": 33,
+          "p95": 50.4,
+          "min": 26.3,
+          "max": 51
+        },
+        "500": {
+          "n": 30,
+          "median": 50.2,
+          "p95": 93.3,
+          "min": 40.5,
+          "max": 104.1
+        },
+        "1000": {
+          "n": 30,
+          "median": 79.4,
+          "p95": 122.6,
+          "min": 65,
+          "max": 130.5
+        }
+      },
+      "statementsPerAnalyticsRequest": {
+        "10": null,
+        "50": null,
+        "100": null,
+        "250": null,
+        "500": null,
+        "1000": null
+      },
+      "statementsPerDashboardRequest": {
+        "10": null,
+        "50": null,
+        "100": null,
+        "250": null,
+        "500": null,
+        "1000": null
+      }
+    },
+    "statements": {
+      "20": 2,
+      "100": 2,
+      "500": 2
+    },
+    "dashStatements": {
+      "20": 3,
+      "100": 3,
+      "500": 3
+    },
+    "load": {
+      "100": {
+        "label": "revised",
+        "environment": {
+          "node": "v22.22.0",
+          "platform": "linux x64",
+          "date": "2026-10-12T18:15:28.021Z",
+          "baseUrl": "http://localhost:3102"
+        },
+        "concurrency": 10,
+        "seconds": 20,
+        "decisions": 100,
+        "requests": 2584,
+        "errors": 0,
+        "throughput": 129.2,
+        "median": 71.7,
+        "p95": 109.6
+      },
+      "500": {
+        "label": "revised",
+        "environment": {
+          "node": "v22.22.0",
+          "platform": "linux x64",
+          "date": "2026-10-12T18:15:48.974Z",
+          "baseUrl": "http://localhost:3102"
+        },
+        "concurrency": 10,
+        "seconds": 20,
+        "decisions": 500,
+        "requests": 1074,
+        "errors": 0,
+        "throughput": 53.7,
+        "median": 175.7,
+        "p95": 266.1
+      }
+    },
+    "net": {
+      "label": "revised",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:15:49.772Z",
+        "baseUrl": "http://localhost:3112"
+      },
+      "decisions": 100,
+      "reps": 20,
+      "byRtt": {
+        "0": {
+          "analytics": {
+            "n": 20,
+            "median": 17.3,
+            "p95": 23,
+            "min": 12.4,
+            "max": 24.5
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 32.9,
+            "p95": 44.2,
+            "min": 23.4,
+            "max": 135
+          }
+        },
+        "2": {
+          "analytics": {
+            "n": 20,
+            "median": 21.4,
+            "p95": 33.3,
+            "min": 16.9,
+            "max": 34.2
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 36.2,
+            "p95": 48.7,
+            "min": 31,
+            "max": 50
+          }
+        },
+        "5": {
+          "analytics": {
+            "n": 20,
+            "median": 28.4,
+            "p95": 34.4,
+            "min": 22.9,
+            "max": 37.8
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 51.1,
+            "p95": 61.7,
+            "min": 42.9,
+            "max": 75.1
+          }
+        },
+        "10": {
+          "analytics": {
+            "n": 20,
+            "median": 38.1,
+            "p95": 46.6,
+            "min": 34,
+            "max": 47.3
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 58.7,
+            "p95": 94.9,
+            "min": 55,
+            "max": 144.1
+          }
+        },
+        "20": {
+          "analytics": {
+            "n": 20,
+            "median": 59.8,
+            "p95": 65.2,
+            "min": 53.5,
+            "max": 66.3
+          },
+          "dashboard": {
+            "n": 20,
+            "median": 95.6,
+            "p95": 105.6,
+            "min": 87.8,
+            "max": 107.3
+          }
+        }
+      }
+    },
+    "diff": {
+      "label": "revised",
+      "version": "revised",
+      "environment": {
+        "node": "v22.22.0",
+        "platform": "linux x64",
+        "date": "2026-10-12T18:14:05.962Z",
+        "baseUrl": "http://localhost:3102"
+      },
+      "usersPerProfile": 25,
+      "decisionsPerUser": 40,
+      "mismatchedValues": 0,
+      "comparedValues": 606,
+      "summary": {
+        "Calibrated": {
+          "meanGap": {
+            "mean": -0.01,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 86.16,
+            "sd": 1.77
+          },
+          "confidenceCalibrationScore": {
+            "mean": 93.28,
+            "sd": 1.57
+          },
+          "riskCalibrationScore": {
+            "mean": 96.96,
+            "sd": 1.37
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 20.2,
+            "sd": 4.67
+          },
+          "underconfidenceRate": {
+            "mean": 20.8,
+            "sd": 6.78
+          }
+        },
+        "Overconfident": {
+          "meanGap": {
+            "mean": 1.88,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 79.24,
+            "sd": 2.39
+          },
+          "confidenceCalibrationScore": {
+            "mean": 81.12,
+            "sd": 2.4
+          },
+          "riskCalibrationScore": {
+            "mean": 81.36,
+            "sd": 2.46
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 57.96,
+            "sd": 7.91
+          },
+          "underconfidenceRate": {
+            "mean": 2.52,
+            "sd": 2.24
+          }
+        },
+        "Underconfident": {
+          "meanGap": {
+            "mean": -1.95,
+            "sd": 0.23
+          },
+          "decisionAccuracyScore": {
+            "mean": 78.44,
+            "sd": 1.94
+          },
+          "confidenceCalibrationScore": {
+            "mean": 80.32,
+            "sd": 2.41
+          },
+          "riskCalibrationScore": {
+            "mean": 80.64,
+            "sd": 2.4
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 2.84,
+            "sd": 2.67
+          },
+          "underconfidenceRate": {
+            "mean": 59.88,
+            "sd": 6.57
+          }
+        },
+        "Inconsistent": {
+          "meanGap": {
+            "mean": -0.09,
+            "sd": 0.24
+          },
+          "decisionAccuracyScore": {
+            "mean": 75.12,
+            "sd": 2.11
+          },
+          "confidenceCalibrationScore": {
+            "mean": 82,
+            "sd": 3.39
+          },
+          "riskCalibrationScore": {
+            "mean": 79,
+            "sd": 1.96
+          },
+          "emotionalBiasScore": {
+            "mean": 0,
+            "sd": 0
+          },
+          "overconfidenceRate": {
+            "mean": 32.24,
+            "sd": 5.37
+          },
+          "underconfidenceRate": {
+            "mean": 34.96,
+            "sd": 4.6
+          }
+        }
+      },
+      "workedExample": {
+        "api": {
+          "decisionAccuracyScore": 77,
+          "riskCalibrationScore": 85,
+          "emotionalBiasScore": 26,
+          "confidenceCalibrationScore": 81,
+          "totalDecisions": 10,
+          "pendingDecisions": 0,
+          "completedDecisions": 10,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 20,
+          "highRiskSuccessRate": 35,
+          "lowRiskSuccessRate": 77,
+          "meanConfidenceGap": 0.9,
+          "calibrationError": 1.9,
+          "riskCalibrationError": 1.5,
+          "calibrationByRisk": {
+            "low": {
+              "n": 3,
+              "meanConfidence": 6.666666666666667,
+              "meanSuccess": 7.666666666666667,
+              "gap": -1
+            },
+            "medium": {
+              "n": 5,
+              "meanConfidence": 7,
+              "meanSuccess": 6.6,
+              "gap": 0.4
+            },
+            "high": {
+              "n": 2,
+              "meanConfidence": 8.5,
+              "meanSuccess": 3.5,
+              "gap": 5
+            }
+          },
+          "minimumHistory": 20,
+          "sufficientHistory": false,
+          "decisionsByCategory": {
+            "product": 10
+          },
+          "confidenceVsOutcome": [
+            {
+              "confidence": 8,
+              "outcome": 9,
+              "title": "Accept internship offer",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "medium"
+            },
+            {
+              "confidence": 7,
+              "outcome": 7,
+              "title": "Buy a laptop on instalments",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "low"
+            },
+            {
+              "confidence": 9,
+              "outcome": 3,
+              "title": "Launch feature without user testing",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "high"
+            },
+            {
+              "confidence": 6,
+              "outcome": 8,
+              "title": "Join a morning gym batch",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "low"
+            },
+            {
+              "confidence": 7,
+              "outcome": 5,
+              "title": "Move to a shared flat",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "medium"
+            },
+            {
+              "confidence": 8,
+              "outcome": 4,
+              "title": "Switch database provider mid-sprint",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "high"
+            },
+            {
+              "confidence": 5,
+              "outcome": 8,
+              "title": "Apply for a hackathon",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "medium"
+            },
+            {
+              "confidence": 6,
+              "outcome": 6,
+              "title": "Invest savings in an index fund",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "medium"
+            },
+            {
+              "confidence": 9,
+              "outcome": 5,
+              "title": "Hire a freelance designer",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "medium"
+            },
+            {
+              "confidence": 7,
+              "outcome": 8,
+              "title": "Start a weekend course",
+              "date": "2026-09-01T00:00:00.000Z",
+              "risk": "low"
+            }
+          ],
+          "monthlyTrend": [
+            {
+              "month": "2026-09",
+              "count": 10,
+              "avgScore": 6
+            }
+          ],
+          "emotionalDistribution": {
+            "calm": 5,
+            "excited": 2,
+            "pressured": 1,
+            "uncertain": 1,
+            "stressed": 1
+          },
+          "riskDistribution": {
+            "low": 3,
+            "medium": 5,
+            "high": 2
+          }
+        },
+        "pure": {
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 85,
+          "emotionalBiasScore": 26,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 20,
+          "highRiskSuccessRate": 35,
+          "lowRiskSuccessRate": 77,
+          "meanConfidenceGap": 0.9,
+          "calibrationError": 1.9,
+          "riskCalibrationError": 1.5,
+          "calibrationByRisk": {
+            "low": {
+              "n": 3,
+              "meanConfidence": 6.666666666666667,
+              "meanSuccess": 7.666666666666667,
+              "gap": -1
+            },
+            "medium": {
+              "n": 5,
+              "meanConfidence": 7,
+              "meanSuccess": 6.6,
+              "gap": 0.4
+            },
+            "high": {
+              "n": 2,
+              "meanConfidence": 8.5,
+              "meanSuccess": 3.5,
+              "gap": 5
+            }
+          },
+          "resolvedDecisions": 10,
+          "minimumHistory": 20,
+          "sufficientHistory": false
+        },
+        "mismatched": []
+      },
+      "users": [
+        {
+          "profile": "Calibrated",
+          "user": 0,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 92,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 1,
+          "meanGap": 0.225,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 95,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 2,
+          "meanGap": -0.5,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 95,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 3,
+          "meanGap": -0.225,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 93,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 4,
+          "meanGap": 0.05,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 92,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 5,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 6,
+          "meanGap": 0.175,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 93,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 7,
+          "meanGap": 0.2,
+          "decisionAccuracyScore": 89,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 10,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 8,
+          "meanGap": 0.2,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 9,
+          "meanGap": -0.375,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 91,
+          "riskCalibrationScore": 96,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 10,
+          "meanGap": -0.35,
+          "decisionAccuracyScore": 84,
+          "confidenceCalibrationScore": 92,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 11,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 12,
+          "meanGap": 0.55,
+          "decisionAccuracyScore": 83,
+          "confidenceCalibrationScore": 90,
+          "riskCalibrationScore": 95,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 13,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 85,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 18,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 14,
+          "meanGap": -0.075,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 96,
+          "riskCalibrationScore": 96,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 13,
+          "underconfidenceRate": 15,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 15,
+          "meanGap": -0.35,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 91,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 16,
+          "meanGap": -0.125,
+          "decisionAccuracyScore": 88,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 13,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 17,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 18,
+          "meanGap": -0.025,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 96,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 19,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 92,
+          "riskCalibrationScore": 98,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 20,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 20,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 94,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 21,
+          "meanGap": -0.15,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 91,
+          "riskCalibrationScore": 99,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 23,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 22,
+          "meanGap": 0.225,
+          "decisionAccuracyScore": 87,
+          "confidenceCalibrationScore": 95,
+          "riskCalibrationScore": 93,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 23,
+          "underconfidenceRate": 13,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 23,
+          "meanGap": -0.25,
+          "decisionAccuracyScore": 86,
+          "confidenceCalibrationScore": 93,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 18,
+          "underconfidenceRate": 20,
+          "mismatched": []
+        },
+        {
+          "profile": "Calibrated",
+          "user": 24,
+          "meanGap": -0.175,
+          "decisionAccuracyScore": 89,
+          "confidenceCalibrationScore": 93,
+          "riskCalibrationScore": 97,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 15,
+          "underconfidenceRate": 25,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 0,
+          "meanGap": 2,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 53,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 1,
+          "meanGap": 2.175,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 78,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 70,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 2,
+          "meanGap": 1.4,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 86,
+          "riskCalibrationScore": 86,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 45,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 3,
+          "meanGap": 1.725,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 4,
+          "meanGap": 2,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 5,
+          "meanGap": 1.9,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 6,
+          "meanGap": 2.05,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 63,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 7,
+          "meanGap": 1.975,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 8,
+          "meanGap": 2.125,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 9,
+          "meanGap": 1.55,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 85,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 48,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 10,
+          "meanGap": 1.5,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 85,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 8,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 11,
+          "meanGap": 1.975,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 12,
+          "meanGap": 2.375,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 75,
+          "riskCalibrationScore": 76,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 73,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 13,
+          "meanGap": 2.025,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 14,
+          "meanGap": 1.775,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 48,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 15,
+          "meanGap": 1.525,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 84,
+          "riskCalibrationScore": 85,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 16,
+          "meanGap": 1.775,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 17,
+          "meanGap": 1.95,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 18,
+          "meanGap": 1.95,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 19,
+          "meanGap": 1.85,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 57,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 20,
+          "meanGap": 2.1,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 21,
+          "meanGap": 1.675,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 55,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 22,
+          "meanGap": 2.125,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 68,
+          "underconfidenceRate": 3,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 23,
+          "meanGap": 1.65,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 84,
+          "riskCalibrationScore": 84,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 50,
+          "underconfidenceRate": 5,
+          "mismatched": []
+        },
+        {
+          "profile": "Overconfident",
+          "user": 24,
+          "meanGap": 1.75,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 60,
+          "underconfidenceRate": 0,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 0,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 1,
+          "meanGap": -1.7,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 2,
+          "meanGap": -2.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 75,
+          "riskCalibrationScore": 75,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 73,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 3,
+          "meanGap": -2.125,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 4,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 5,
+          "meanGap": -1.9,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 53,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 6,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 53,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 7,
+          "meanGap": -1.725,
+          "decisionAccuracyScore": 81,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 8,
+          "meanGap": -1.725,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 83,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 65,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 9,
+          "meanGap": -2.3,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 77,
+          "riskCalibrationScore": 77,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 10,
+          "meanGap": -2.225,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 77,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 11,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 63,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 12,
+          "meanGap": -1.425,
+          "decisionAccuracyScore": 82,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 86,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 43,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 13,
+          "meanGap": -1.8,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 14,
+          "meanGap": -2.025,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 63,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 15,
+          "meanGap": -2.275,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 76,
+          "riskCalibrationScore": 77,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 65,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 16,
+          "meanGap": -2.025,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 17,
+          "meanGap": -1.775,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 8,
+          "underconfidenceRate": 55,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 18,
+          "meanGap": -2,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 5,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 19,
+          "meanGap": -1.9,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 55,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 20,
+          "meanGap": -1.85,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 21,
+          "meanGap": -2.1,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 22,
+          "meanGap": -1.775,
+          "decisionAccuracyScore": 80,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 3,
+          "underconfidenceRate": 57,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 23,
+          "meanGap": -2.125,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 78,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 60,
+          "mismatched": []
+        },
+        {
+          "profile": "Underconfident",
+          "user": 24,
+          "meanGap": -2.075,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 0,
+          "underconfidenceRate": 70,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 0,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 28,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 1,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 84,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 2,
+          "meanGap": -0.575,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 75,
+          "riskCalibrationScore": 77,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 3,
+          "meanGap": -0.3,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 45,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 4,
+          "meanGap": -0.025,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 86,
+          "riskCalibrationScore": 80,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 5,
+          "meanGap": -0.05,
+          "decisionAccuracyScore": 72,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 77,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 40,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 6,
+          "meanGap": 0.1,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 45,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 7,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 77,
+          "confidenceCalibrationScore": 87,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 8,
+          "meanGap": 0.125,
+          "decisionAccuracyScore": 75,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 9,
+          "meanGap": -0.45,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 40,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 10,
+          "meanGap": -0.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 11,
+          "meanGap": 0,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 35,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 12,
+          "meanGap": 0.475,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 76,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 28,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 13,
+          "meanGap": 0.05,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 81,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 40,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 14,
+          "meanGap": -0.15,
+          "decisionAccuracyScore": 79,
+          "confidenceCalibrationScore": 88,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 15,
+          "meanGap": -0.425,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 85,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 16,
+          "meanGap": -0.2,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 80,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 17,
+          "meanGap": 0.025,
+          "decisionAccuracyScore": 74,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 18,
+          "meanGap": -0.1,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 79,
+          "riskCalibrationScore": 76,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 30,
+          "underconfidenceRate": 43,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 19,
+          "meanGap": -0.05,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 86,
+          "riskCalibrationScore": 82,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 20,
+          "meanGap": 0.075,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 33,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 21,
+          "meanGap": -0.225,
+          "decisionAccuracyScore": 76,
+          "confidenceCalibrationScore": 83,
+          "riskCalibrationScore": 81,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 28,
+          "underconfidenceRate": 35,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 22,
+          "meanGap": 0.15,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 76,
+          "riskCalibrationScore": 74,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 33,
+          "underconfidenceRate": 30,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 23,
+          "meanGap": -0.325,
+          "decisionAccuracyScore": 73,
+          "confidenceCalibrationScore": 82,
+          "riskCalibrationScore": 78,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 38,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        },
+        {
+          "profile": "Inconsistent",
+          "user": 24,
+          "meanGap": -0.25,
+          "decisionAccuracyScore": 78,
+          "confidenceCalibrationScore": 84,
+          "riskCalibrationScore": 79,
+          "emotionalBiasScore": 0,
+          "overconfidenceRate": 25,
+          "underconfidenceRate": 38,
+          "mismatched": []
+        }
+      ]
+    }
+  },
+  "metamorphic": [
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR1",
+      "relation": "Uniform overconfidence lowers calibration",
+      "description": "Add 2 to every confidence of a calibrated history; each calibration score must decrease.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 142,
+      "sources": 1000,
+      "rate": 0.142
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2a",
+      "relation": "Opposite errors by risk lower calibration (random risk mix)",
+      "description": "Subtract 2 from low-risk and add 2 to high-risk confidences; each calibration score must decrease.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 1,
+      "sources": 1000,
+      "rate": 0.001
+    },
+    {
+      "id": "MR2b",
+      "relation": "Opposite errors by risk lower calibration (balanced history)",
+      "description": "As MR2, on histories with equal numbers of low- and high-risk decisions, where the two errors cancel in the mean.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR3",
+      "relation": "Larger bias, lower calibration",
+      "description": "Shifting every confidence by +3 must give a lower calibration score than shifting by +1.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR4",
+      "relation": "Order invariance",
+      "description": "Shuffling the order of decisions must leave every score unchanged.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR5",
+      "relation": "Replication invariance",
+      "description": "Duplicating the whole history must leave every score unchanged.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "baseline",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "decisionAccuracyScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "confidenceCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR6",
+      "relation": "Pending decisions do not affect calibration",
+      "description": "Adding pending decisions (no outcome yet) must leave accuracy and calibration scores unchanged.",
+      "version": "revised",
+      "score": "riskCalibrationScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR7",
+      "relation": "Negated warning words add no bias",
+      "description": "Appending \"No regrets, not anxious.\" to every reflection must not increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR7",
+      "relation": "Negated warning words add no bias",
+      "description": "Appending \"No regrets, not anxious.\" to every reflection must not increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR8",
+      "relation": "Words that merely contain a warning word add no bias",
+      "description": "Appending \"Fearless and undoubtedly sound.\" must not increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 1000,
+      "sources": 1000,
+      "rate": 1
+    },
+    {
+      "id": "MR8",
+      "relation": "Words that merely contain a warning word add no bias",
+      "description": "Appending \"Fearless and undoubtedly sound.\" must not increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR9",
+      "relation": "Inflected warning words are recognised",
+      "description": "Appending \"Panicked and regretted it.\" to calm, otherwise neutral reflections must increase emotional bias.",
+      "version": "baseline",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    },
+    {
+      "id": "MR9",
+      "relation": "Inflected warning words are recognised",
+      "description": "Appending \"Panicked and regretted it.\" to calm, otherwise neutral reflections must increase emotional bias.",
+      "version": "revised",
+      "score": "emotionalBiasScore",
+      "violations": 0,
+      "sources": 1000,
+      "rate": 0
+    }
+  ],
+  "power": {
+    "minimumHistory": {
+      "perProfile": {
+        "Overconfident (+2)": 10,
+        "Underconfident (-2)": 10,
+        "Inconsistent (+/-2)": 10,
+        "Noisy (SD 2)": 20
+      },
+      "overall": 20
+    },
+    "repetitions": 1000
+  },
+  "replay": {
+    "summary": {
+      "forecasters": 39,
+      "forecasts": 4793,
+      "forecastsPerForecaster": {
+        "min": 40,
+        "median": 88,
+        "max": 578
+      },
+      "pooled": {
+        "n": 4793,
+        "brier": 0.11009823687748496,
+        "ece": 0.019317551988086948,
+        "reliability": 0.0008866810069959642,
+        "citl": 0.003528484598140147,
+        "dce": 0.02024986995178429,
+        "baseRate": 0.28270394325057374
+      },
+      "ranges": {
+        "baselinecc": [
+          87,
+          100
+        ],
+        "revisedcc": [
+          81,
+          97
+        ],
+        "baselinerc": [
+          15,
+          54
+        ],
+        "revisedrc": [
+          84,
+          100
+        ],
+        "ece": [
+          0.038,
+          0.207
+        ],
+        "dce": [
+          0.012,
+          0.175
+        ],
+        "brier": [
+          0.055,
+          0.237
+        ]
+      }
+    },
+    "correlations": [
+      {
+        "score": "baseline confidence calibration",
+        "reference": "ECE",
+        "rho": -0.423,
+        "ci95": [
+          -0.687,
+          -0.104
+        ]
+      },
+      {
+        "score": "revised confidence calibration",
+        "reference": "ECE",
+        "rho": -0.91,
+        "ci95": [
+          -0.961,
+          -0.812
+        ]
+      },
+      {
+        "score": "baseline confidence calibration",
+        "reference": "reliability",
+        "rho": -0.465,
+        "ci95": [
+          -0.701,
+          -0.149
+        ]
+      },
+      {
+        "score": "revised confidence calibration",
+        "reference": "reliability",
+        "rho": -0.796,
+        "ci95": [
+          -0.898,
+          -0.628
+        ]
+      },
+      {
+        "score": "baseline confidence calibration",
+        "reference": "|calibration-in-the-large|",
+        "rho": -0.959,
+        "ci95": [
+          -0.981,
+          -0.905
+        ]
+      },
+      {
+        "score": "baseline risk calibration",
+        "reference": "domain calibration error",
+        "rho": -0.08,
+        "ci95": [
+          -0.38,
+          0.226
+        ]
+      },
+      {
+        "score": "revised risk calibration",
+        "reference": "domain calibration error",
+        "rho": -0.963,
+        "ci95": [
+          -0.982,
+          -0.913
+        ]
+      },
+      {
+        "score": "baseline risk calibration",
+        "reference": "outcome base rate",
+        "rho": 0.511,
+        "ci95": [
+          0.21,
+          0.723
+        ]
+      },
+      {
+        "score": "revised risk calibration",
+        "reference": "outcome base rate",
+        "rho": -0.262,
+        "ci95": [
+          -0.524,
+          0.058
+        ]
+      }
+    ],
+    "distortion": [
+      {
+        "id": "D1",
+        "name": "Uniform overconfidence: p + 0.2",
+        "reference": "ECE",
+        "forecasters": 39,
+        "results": {
+          "baseline confidence calibration": {
+            "agreement": 0.949,
+            "unchanged": 0
+          },
+          "baseline risk calibration": {
+            "agreement": 0,
+            "unchanged": 1
+          },
+          "revised confidence calibration": {
+            "agreement": 1,
+            "unchanged": 0
+          },
+          "revised risk calibration": {
+            "agreement": 0.974,
+            "unchanged": 0
+          }
+        }
+      },
+      {
+        "id": "D2",
+        "name": "Uniform underconfidence: p - 0.2",
+        "reference": "ECE",
+        "forecasters": 39,
+        "results": {
+          "baseline confidence calibration": {
+            "agreement": 0.897,
+            "unchanged": 0
+          },
+          "baseline risk calibration": {
+            "agreement": 0,
+            "unchanged": 1
+          },
+          "revised confidence calibration": {
+            "agreement": 0.872,
+            "unchanged": 0.077
+          },
+          "revised risk calibration": {
+            "agreement": 0.846,
+            "unchanged": 0
+          }
+        }
+      },
+      {
+        "id": "D3",
+        "name": "Opposite errors by domain: market - 0.2, event + 0.2",
+        "reference": "DCE",
+        "forecasters": 39,
+        "results": {
+          "baseline confidence calibration": {
+            "agreement": 0.692,
+            "unchanged": 0.026
+          },
+          "baseline risk calibration": {
+            "agreement": 0,
+            "unchanged": 1
+          },
+          "revised confidence calibration": {
+            "agreement": 0.846,
+            "unchanged": 0.051
+          },
+          "revised risk calibration": {
+            "agreement": 0.923,
+            "unchanged": 0.077
+          }
+        }
+      },
+      {
+        "id": "D4",
+        "name": "Extremised: logit doubled",
+        "reference": "ECE",
+        "forecasters": 39,
+        "results": {
+          "baseline confidence calibration": {
+            "agreement": 0.282,
+            "unchanged": 0.385
+          },
+          "baseline risk calibration": {
+            "agreement": 0,
+            "unchanged": 1
+          },
+          "revised confidence calibration": {
+            "agreement": 0.615,
+            "unchanged": 0.282
+          },
+          "revised risk calibration": {
+            "agreement": 0.333,
+            "unchanged": 0.359
+          }
+        }
+      }
+    ],
+    "lengthCurve": [
+      {
+        "n": 10,
+        "forecasters": 24,
+        "baselinecc": -0.134,
+        "revisedcc": -0.265,
+        "baselinerc": 0.039,
+        "revisedrc": -0.216
+      },
+      {
+        "n": 20,
+        "forecasters": 24,
+        "baselinecc": -0.153,
+        "revisedcc": -0.358,
+        "baselinerc": 0.02,
+        "revisedrc": -0.305
+      },
+      {
+        "n": 40,
+        "forecasters": 24,
+        "baselinecc": -0.201,
+        "revisedcc": -0.468,
+        "baselinerc": -0.006,
+        "revisedrc": -0.432
+      },
+      {
+        "n": 80,
+        "forecasters": 24,
+        "baselinecc": -0.28,
+        "revisedcc": -0.606,
+        "baselinerc": -0.063,
+        "revisedrc": -0.736
+      }
+    ]
+  },
+  "mutation": {
+    "1-worked": {
+      "mutants": 200,
+      "killed": 133,
+      "score": 66.5,
+      "survived": [
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "62:StringLiteral",
+        "62:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "65:ArrayDeclaration",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "77:MethodExpression",
+        "77:StringLiteral",
+        "77:Regex",
+        "77:ConditionalExpression",
+        "77:EqualityOperator",
+        "81:MethodExpression",
+        "92:MethodExpression",
+        "92:MethodExpression",
+        "92:ArithmeticOperator",
+        "93:ConditionalExpression",
+        "93:ArrowFunction",
+        "102:ConditionalExpression",
+        "117:ConditionalExpression",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "129:MethodExpression",
+        "130:ConditionalExpression",
+        "130:LogicalOperator",
+        "130:ConditionalExpression",
+        "130:ConditionalExpression",
+        "134:ObjectLiteral",
+        "139:ConditionalExpression",
+        "139:ConditionalExpression",
+        "139:EqualityOperator",
+        "139:EqualityOperator",
+        "152:EqualityOperator",
+        "155:ArithmeticOperator",
+        "155:ArithmeticOperator",
+        "183:ConditionalExpression",
+        "184:ConditionalExpression"
+      ]
+    },
+    "2-metamorphic": {
+      "mutants": 200,
+      "killed": 147,
+      "score": 73.5,
+      "survived": [
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "62:StringLiteral",
+        "62:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "77:MethodExpression",
+        "77:StringLiteral",
+        "77:Regex",
+        "77:ConditionalExpression",
+        "77:EqualityOperator",
+        "92:MethodExpression",
+        "92:MethodExpression",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "130:ConditionalExpression",
+        "134:ObjectLiteral",
+        "139:ConditionalExpression",
+        "139:ConditionalExpression",
+        "139:EqualityOperator",
+        "139:EqualityOperator",
+        "152:EqualityOperator",
+        "155:ArithmeticOperator",
+        "155:ArithmeticOperator"
+      ]
+    },
+    "3-property": {
+      "mutants": 200,
+      "killed": 152,
+      "score": 76,
+      "survived": [
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "61:StringLiteral",
+        "62:StringLiteral",
+        "62:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "64:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "65:StringLiteral",
+        "77:MethodExpression",
+        "77:StringLiteral",
+        "77:Regex",
+        "77:ConditionalExpression",
+        "77:EqualityOperator",
+        "92:MethodExpression",
+        "92:MethodExpression",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "118:ArithmeticOperator",
+        "130:ConditionalExpression",
+        "139:ConditionalExpression",
+        "139:EqualityOperator",
+        "152:EqualityOperator"
+      ]
+    },
+    "4-full": {
+      "mutants": 200,
+      "killed": 195,
+      "score": 97.5,
+      "survived": [
+        "77:MethodExpression",
+        "77:StringLiteral",
+        "77:Regex",
+        "77:ConditionalExpression",
+        "77:EqualityOperator"
+      ]
+    },
+    "5-examples-only": {
+      "mutants": 200,
+      "killed": 195,
+      "score": 97.5,
+      "survived": [
+        "77:MethodExpression",
+        "77:StringLiteral",
+        "77:Regex",
+        "77:ConditionalExpression",
+        "77:EqualityOperator"
+      ]
+    }
+  }
+}

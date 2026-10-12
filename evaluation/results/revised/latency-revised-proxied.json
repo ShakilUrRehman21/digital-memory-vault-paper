@@ -1,0 +1,120 @@
+{
+  "label": "revised-proxied",
+  "environment": {
+    "node": "v22.22.0",
+    "platform": "linux x64",
+    "date": "2026-10-12T18:14:42.205Z",
+    "baseUrl": "http://localhost:3112"
+  },
+  "reps": 5,
+  "endpoints": {
+    "Register": {
+      "n": 20,
+      "median": 469.1,
+      "p95": 636.6,
+      "min": 434.3,
+      "max": 741.9
+    },
+    "Log in": {
+      "n": 20,
+      "median": 468.1,
+      "p95": 590.9,
+      "min": 428,
+      "max": 594
+    },
+    "Log a decision": {
+      "n": 5,
+      "median": 19.3,
+      "p95": 29.7,
+      "min": 15.1,
+      "max": 29.7
+    },
+    "Record an outcome": {
+      "n": 5,
+      "median": 19.7,
+      "p95": 31.3,
+      "min": 12.9,
+      "max": 31.3
+    },
+    "List decisions (5 decisions)": {
+      "n": 5,
+      "median": 9,
+      "p95": 18.6,
+      "min": 6.8,
+      "max": 18.6
+    },
+    "View one decision": {
+      "n": 5,
+      "median": 10.7,
+      "p95": 15.7,
+      "min": 9.1,
+      "max": 15.7
+    },
+    "Export a report": {
+      "n": 5,
+      "median": 18.9,
+      "p95": 37.7,
+      "min": 13.3,
+      "max": 37.7
+    }
+  },
+  "analyticsByN": {
+    "20": {
+      "n": 5,
+      "median": 18.5,
+      "p95": 26.5,
+      "min": 13.8,
+      "max": 26.5,
+      "snapshotRowsAfter": 1
+    },
+    "100": {
+      "n": 5,
+      "median": 12.1,
+      "p95": 22.3,
+      "min": 11,
+      "max": 22.3,
+      "snapshotRowsAfter": 1
+    },
+    "500": {
+      "n": 5,
+      "median": 29.1,
+      "p95": 50.3,
+      "min": 21.8,
+      "max": 50.3,
+      "snapshotRowsAfter": 1
+    }
+  },
+  "dashboardByN": {
+    "20": {
+      "n": 5,
+      "median": 43.6,
+      "p95": 66.4,
+      "min": 31.3,
+      "max": 66.4
+    },
+    "100": {
+      "n": 5,
+      "median": 32.1,
+      "p95": 41.4,
+      "min": 20.9,
+      "max": 41.4
+    },
+    "500": {
+      "n": 5,
+      "median": 56.7,
+      "p95": 86.3,
+      "min": 48.5,
+      "max": 86.3
+    }
+  },
+  "statementsPerAnalyticsRequest": {
+    "20": 2,
+    "100": 2,
+    "500": 2
+  },
+  "statementsPerDashboardRequest": {
+    "20": 3,
+    "100": 3,
+    "500": 3
+  }
+}

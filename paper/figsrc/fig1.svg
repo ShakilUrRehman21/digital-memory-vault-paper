@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 92" width="131mm" height="92mm" font-family="FreeSans, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 6 6" refX="5.5" refY="3" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#333"/></marker>
+    <style>
+      .band { stroke: #8a8f98; stroke-width: 0.25; }
+      .box { fill: #ffffff; stroke: #333; stroke-width: 0.3; }
+      .new { fill: #ffffff; stroke: #000; stroke-width: 0.75; }
+      .t { font-size: 3.1px; font-weight: bold; fill: #111; }
+      .s { font-size: 2.6px; fill: #333; }
+      .lab { font-size: 2.3px; font-weight: bold; fill: #333; letter-spacing: 0.3px; }
+      .ln { stroke: #333; stroke-width: 0.3; fill: none; marker-end: url(#ah); }
+    </style>
+  </defs>
+  <!-- layer bands -->
+  <rect x="0.5" y="0.5" width="130" height="16" rx="1" fill="#ffffff" class="band"/>
+  <rect x="0.5" y="18.5" width="130" height="12" rx="1" fill="#ffffff" class="band"/>
+  <rect x="0.5" y="32.5" width="130" height="31" rx="1" fill="#ffffff" class="band"/>
+  <rect x="0.5" y="65.5" width="130" height="26" rx="1" fill="#ffffff" class="band"/>
+  <text class="lab" transform="translate(4,8.5) rotate(-90)" text-anchor="middle">CLIENT</text>
+  <text class="lab" transform="translate(4,24.5) rotate(-90)" text-anchor="middle">ACCESS</text>
+  <text class="lab" transform="translate(4,48) rotate(-90)" text-anchor="middle">SERVER</text>
+  <text class="lab" transform="translate(4,78.5) rotate(-90)" text-anchor="middle">DATA</text>
+
+  <!-- client -->
+  <rect class="box" x="8" y="2.5" width="30" height="12" rx="0.8"/>
+  <text class="t" x="10" y="7">Landing and</text><text class="t" x="10" y="10.6">sign-in pages</text>
+  <rect class="box" x="40" y="2.5" width="56" height="12" rx="0.8"/>
+  <text class="t" x="42" y="7">Dashboard</text>
+  <text class="s" x="42" y="10.4">Overview, Decisions and Analytics tabs;</text>
+  <text class="s" x="42" y="13.2">1-10 pickers start unset</text>
+  <rect class="box" x="98" y="2.5" width="31" height="12" rx="0.8"/>
+  <text class="t" x="100" y="7">Decision report</text><text class="s" x="100" y="10.4">downloaded HTML file</text>
+
+  <!-- access -->
+  <rect class="box" x="8" y="20.5" width="30" height="8" rx="0.8" stroke-dasharray="1.2 0.8"/>
+  <text class="t" x="10" y="24.2">Public routes</text><text class="s" x="10" y="27.2">no token check</text>
+  <rect class="box" x="40" y="20.5" width="89" height="8" rx="0.8"/>
+  <text class="t" x="42" y="24.2">Proxy (proxy.ts)</text>
+  <text class="s" x="42" y="27.2">verifies the login token in the cookie and passes the user ID to the routes</text>
+
+  <!-- server -->
+  <rect class="box" x="8" y="34.5" width="21" height="13" rx="0.8"/>
+  <text class="t" x="10" y="38.3">Auth</text><text class="s" x="10" y="41.3">bcrypt hashing,</text><text class="s" x="10" y="44.1">login rate limit</text>
+  <rect class="new" x="31" y="34.5" width="22" height="13" rx="0.8"/>
+  <text class="t" x="33" y="38.3">Decisions</text><text class="s" x="33" y="41.3">owner check,</text><text class="s" x="33" y="44.1">prediction lock</text>
+  <rect class="new" x="55" y="34.5" width="23" height="13" rx="0.8"/>
+  <text class="t" x="57" y="38.3">Outcomes</text><text class="s" x="57" y="41.3">atomic claim,</text><text class="s" x="57" y="44.1">date check</text>
+  <rect class="new" x="80" y="34.5" width="24" height="13" rx="0.8"/>
+  <text class="t" x="82" y="38.3">Analytics</text><text class="s" x="82" y="41.3">one query,</text><text class="s" x="82" y="44.1">daily snapshot</text>
+  <rect class="new" x="106" y="34.5" width="23" height="13" rx="0.8"/>
+  <text class="t" x="108" y="38.3">Export</text><text class="s" x="108" y="41.3">all fields</text><text class="s" x="108" y="44.1">escaped</text>
+  <rect class="box" x="8" y="49.5" width="45" height="12" rx="0.8"/>
+  <text class="t" x="10" y="53.6">Dashboard page</text><text class="s" x="10" y="56.8">server-rendered; one query for</text><text class="s" x="10" y="59.6">all of the user's outcomes</text>
+  <rect class="new" x="55" y="49.5" width="74" height="12" rx="0.8"/>
+  <text class="t" x="57" y="53.6">Scoring module (lib/analytics/scores.ts)</text>
+  <text class="s" x="57" y="56.8">pure functions, no I/O; also imported by the tests,</text>
+  <text class="s" x="57" y="59.6">simulations and real-data replay of the evaluation kit</text>
+  <path class="ln" d="M92,47.5 L92,49.3"/>
+
+  <!-- data -->
+  <rect class="box" x="8" y="67.5" width="121" height="7" rx="0.8"/>
+  <text class="t" x="10" y="72">Drizzle ORM</text><text class="s" x="32" y="72">typed queries generated from the database schema</text>
+  <rect class="box" x="8" y="76.5" width="121" height="13" rx="0.8"/>
+  <text class="t" x="10" y="80.6">PostgreSQL</text><text class="s" x="30" y="80.6">Neon serverless driver (hosted) or node-postgres (any other server)</text>
+  <rect class="box" x="10" y="82.5" width="26" height="5.6" rx="0.6"/><text class="s" x="23" y="86.2" text-anchor="middle">users</text>
+  <rect class="box" x="38" y="82.5" width="26" height="5.6" rx="0.6"/><text class="s" x="51" y="86.2" text-anchor="middle">decisions</text>
+  <rect class="new" x="66" y="82.5" width="30" height="5.6" rx="0.6"/><text class="s" x="81" y="86.2" text-anchor="middle">outcomes</text>
+  <rect class="new" x="98" y="82.5" width="29" height="5.6" rx="0.6"/><text class="s" x="112.5" y="86.2" text-anchor="middle">decision_metrics</text>
+
+  <!-- arrows between layers -->
+  <path class="ln" d="M23,14.5 L23,20.3"/>
+  <path class="ln" d="M68,14.5 L68,20.3"/>
+  <path class="ln" d="M84.5,28.5 L84.5,34.3"/>
+  <path class="ln" d="M42,28.5 L42,34.3"/>
+  <path class="ln" d="M117.5,28.5 L117.5,34.3"/>
+  <path class="ln" d="M68,61.5 L68,67.3"/>
+</svg>
